@@ -1,0 +1,918 @@
+{
+  "products": [
+    {
+      "product_name": "Bàn uống nước",
+      "price": 8990000,
+      "size": [
+        "Cao 0.4 x Rộng 0.5 x Dài 1m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 9500000,
+      "material": [
+        {
+          "name": "Gỗ sồi",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ lim",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/001.jpg"
+      ],
+      "details": {
+        "des1": "- Bàn uống nước hiện đại giá rẻ là sản phẩm nội thất cần thiết để tăng tối đa sự tiện nghi và vẻ đẹp của bộ ghế sofa cũng như nội thất phòng khách, phòng chờ. ",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/phong-khach/001.jpg",
+        "images/products/phong-khach/001a.jpg",
+        "images/products/phong-khach/001b.jpg",
+        "images/products/phong-khach/001c.jpg",
+        "images/products/phong-khach/001d.jpg",
+        "images/products/phong-khach/001e.jpg"
+      ],
+      "color": "Nâu đậm",
+      "id": "1"
+    },
+    {
+      "product_name": "Kệ TV",
+      "price": 4560000,
+      "size": [
+        "Cao 0.5 x Rộng 0.4 x Dài 2m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 5200000,
+      "material": [
+        {
+          "name": "Gỗ sồi",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ lim",
+          "quantity": 0
+        },
+        {
+          "name": "Gỗ tràm",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/002.jpg"
+      ],
+      "details": {
+        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại kệ tivi giá rẻ, kệ tivi hiện đại. ",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-khach/002.jpg"
+      ],
+      "color": "Nâu vân gỗ",
+      "id": "2"
+    },
+    {
+      "product_name": "Giường gỗ",
+      "price": 4000000,
+      "size": [
+        "Cao 0.3 x Rộng 1.6 x Dài 2m"
+      ],
+      "category": "Phòng ngủ",
+      "old_price": 5100000,
+      "material": [
+        {
+          "name": "Gỗ sồi",
+          "quantity": 0
+        },
+        {
+          "name": "Gỗ lim",
+          "quantity": 0
+        }
+      ],
+      "image": [
+        "images/products/phong-ngu/003.jpg"
+      ],
+      "details": {
+        "des1": "- Giường gỗ loại phản chất liệu sồi Nga với đa dạng kích thước và mẫu mã tại nội thất Hoàng Hoan sẽ làm cho không gian phòng ngủ của bạn sẽ sang trọng và tiện nghi hơn. Bạn có thể thoải mái ngả lưng trên chiếc giường sang trọng mang lại cho bạn giấc ngủ sâu và thoải mái.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-ngu/003.jpg"
+      ],
+      "color": "Nâu đậm",
+      "id": "3"
+    },
+    {
+      "product_name": "Bàn ăn",
+      "price": 10550000,
+      "size": [
+        "Cao 0.75 x Rộng 0.8 x Dài 1.6m"
+      ],
+      "category": "Phòng bếp",
+      "old_price": 12000000,
+      "material": [
+        {
+          "name": "Gỗ lim",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ sồi",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-bep/004.jpg"
+      ],
+      "details": {
+        "des1": "- Bộ bàn ăn hiện đại có kích thước vừa đủ để không chiếm quá nhiều diện tích của phòng ăn. Chỉ cần một góc nhỏ với bộ bàn ăn, bạn đã có một bữa cơm gia đình đầm ấm.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4.5,
+      "img_slide": [
+        "images/products/phong-bep/004.jpg"
+      ],
+      "color": "Trắng",
+      "id": "4"
+    },
+    {
+      "product_name": "Bồn rửa mặt",
+      "price": 8000000,
+      "size": [
+        "420 x 420 x 170 mm"
+      ],
+      "category": "Phòng tắm",
+      "old_price": 8500000,
+      "material": [
+        {
+          "name": "Sứ tráng men",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-tam/005.jpg"
+      ],
+      "details": {
+        "des1": "- Sản phẩm được áp dụng công nghệ men sứ Nano có khả năng kháng khuẩn giúp bạn dễ dàng vệ sinh hơn các loại men sứ thông thường khác.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/phong-tam/005.jpg"
+      ],
+      "color": "Trắng sứ",
+      "id": "5"
+    },
+    {
+      "product_name": "Bồn rửa tay",
+      "price": 3900000,
+      "size": [
+        "430 x 430 x 150 mm"
+      ],
+      "category": "Phòng tắm",
+      "old_price": 3950000,
+      "material": [
+        {
+          "name": "Sứ tráng men",
+          "quantity": 0
+        }
+      ],
+      "image": [
+        "images/products/phong-tam/006.jpg"
+      ],
+      "details": {
+        "des1": "- Sản phẩm được áp dụng công nghệ men sứ Nano có khả năng kháng khuẩn giúp bạn dễ dàng vệ sinh hơn các loại men sứ thông thường khác.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4.5,
+      "img_slide": [
+        "images/products/phong-tam/006.jpg"
+      ],
+      "color": "Trắng sứ",
+      "id": "6"
+    },
+    {
+      "product_name": "Tủ quần áo",
+      "price": 11200000,
+      "size": [
+        "Cao 2.4 x Rộng 0.5 x Dài 2.4m"
+      ],
+      "category": "Phòng ngủ",
+      "old_price": 14000000,
+      "material": [
+        {
+          "name": "Gỗ sồi",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ tràm",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-ngu/007.jpg"
+      ],
+      "details": {
+        "des1": "- Tủ quần áo cánh lùa, tủ quần áo giá rẻ hiện đại. Kết hợp không gian phòng ngủ thoáng khi, kết hợp ánh sánh tạo nên một sự hài hòa cho không gian phòng ngủ gia đình bạn",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-ngu/007.jpg"
+      ],
+      "color": "Vàng nhạt",
+      "id": "7"
+    },
+    {
+      "product_name": "Kệ đồ",
+      "price": 4990000,
+      "size": [
+        "Rộng 0.4 x Cao 0.5 x Dài 1.6m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 6000000,
+      "material": [
+        {
+          "name": "Gỗ lim",
+          "quantity": 0
+        },
+        {
+          "name": "Gỗ sồi",
+          "quantity": 0
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/008.jpg"
+      ],
+      "details": {
+        "des1": "- Kệ để đồ trang trí với màu sắc sang trọng được làm từ loại gỗ nhập khẩu cao cấp, đảm bảo chắc chắn và bền đẹp. Loại kệ này rất thích hợp dùng cho văn phòng và gia đình để trưng bày đồ trang trí và sách.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-khach/008.jpg"
+      ],
+      "color": "Nâu vân gỗ",
+      "id": "8"
+    },
+    {
+      "product_name": "Bàn trà",
+      "price": 3600000,
+      "size": [
+        "Dài 1.1 x Rộng 0.6 x Cao 0.4m"
+      ],
+      "category": "Phòng bếp",
+      "old_price": 4000000,
+      "material": [
+        {
+          "name": "Gỗ tự nhiên",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-bep/009.jpg"
+      ],
+      "details": {
+        "des1": "-  Chất liệu khung kim loại, kính cường lực cao cấp sang trọng. Mẫu bàn trà kim loại đẹp được thiết kế từ đá dày 8ly chịu được những va đập an toàn cho người sử dụng, hạn chế tối đa vết trầy xước, tuổi thọ sử dụng lâu dài hơn.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-bep/009.jpg"
+      ],
+      "color": "Nâu đậm",
+      "id": "9"
+    },
+    {
+      "product_name": "Tủ âm tường",
+      "price": 8900000,
+      "size": [
+        "Dài 800 x Rộng 480mm"
+      ],
+      "category": "Phòng tắm",
+      "old_price": 9500000,
+      "material": [
+        {
+          "name": "Gỗ lim",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ MFC chống ẩm",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-tam/010.jpg"
+      ],
+      "details": {
+        "des1": "- Tủ âm tường là loại tủ được làm âm và sâu vào bên trong hốc tường nhằm tận dụng những phần khoảng trống trong không gian để tiết kiệm diện tích và tạo sự liền mạch.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-tam/010.jpg"
+      ],
+      "color": "Màu inox đặc trưng",
+      "id": "10"
+    },
+    {
+      "product_name": "SOFA",
+      "price": 8400000,
+      "size": [
+        "Dài 2.4 x Rộng 1.6 x Cao 0.8m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 10000000,
+      "material": [
+        {
+          "name": "Bọc vải nỉ",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/011.jpg"
+      ],
+      "details": {
+        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại sofa văng sofa góc, sofa giá rẻ, sofa hiện đại.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/phong-khach/011.jpg"
+      ],
+      "color": "Vàng cam",
+      "id": "11"
+    },
+    {
+      "product_name": "Giá đồ",
+      "price": 2490000,
+      "size": [
+        "Rộng 65 x Sâu 28 x Cao 157cm"
+      ],
+      "category": "Phòng khách",
+      "old_price": 3000000,
+      "material": [
+        {
+          "name": "Gỗ công nghiệp",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ MDF",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/012.jpg"
+      ],
+      "details": {
+        "des1": "- Giá để đồ trang trí với màu sắc sang trọng được làm từ loại gỗ nhập khẩu cao cấp, đảm bảo chắc chắn và bền đẹp. Loại kệ này rất thích hợp dùng cho văn phòng và gia đình để trưng bày đồ trang trí và sách.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-khach/012.jpg"
+      ],
+      "color": "Nâu đậm",
+      "id": "12"
+    },
+    {
+      "product_name": "Giường châu Âu",
+      "price": 8999000,
+      "size": [
+        "Dài 2.2 x Rộng 2 x Cao 1.2m"
+      ],
+      "category": "Phòng ngủ",
+      "old_price": 11999000,
+      "material": [
+        {
+          "name": "Khung gỗ bọc da PU",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-ngu/013.jpg"
+      ],
+      "details": {
+        "des1": "- Không chỉ ghi điểm nhờ thiết kế ẩn tượng với các chi tiết điêu khắc công phu, tỉ mỉ sản phẩm giường ngủ tân cổ điển bằng gỗ tự nhiên còn tạo nên điểm nhấn với chất liệu cao cấp, có độ bền cao. Gỗ tự nhiên còn được xử lý chống cong vênh, mối mọt và ẩm mốc giúp sản phẩm luôn bền đẹp với thời gian.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-ngu/013.jpg"
+      ],
+      "color": "Trắng",
+      "id": "13"
+    },
+    {
+      "product_name": "Bàn uống nước 2",
+      "price": 3290000,
+      "size": [
+        "Dài 1.2 x Rộng 0.65 x Cao 0.45m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 4000000,
+      "material": [
+        {
+          "name": "Mặt đá",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/014.jpg"
+      ],
+      "details": {
+        "des1": "- Bàn uống nước hiện đại giá rẻ là sản phẩm nội thất cần thiết để tăng tối đa sự tiện nghi và vẻ đẹp của bộ ghế sofa cũng như nội thất phòng khách, phòng chờ.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-khach/014.jpg"
+      ],
+      "color": "Đen",
+      "id": "14"
+    },
+    {
+      "product_name": "Bồn rửa 2",
+      "price": 3300000,
+      "size": [
+        "400 X 400 X 150mm"
+      ],
+      "category": "Phòng tắm",
+      "old_price": 4000000,
+      "material": [
+        {
+          "name": "Sứ tráng men",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-tam/015.jpg"
+      ],
+      "details": {
+        "des1": "- Sản phẩm được áp dụng công nghệ men sứ Nano có khả năng kháng khuẩn giúp bạn dễ dàng vệ sinh hơn các loại men sứ thông thường khác.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-tam/015.jpg"
+      ],
+      "color": "Trắng sứ",
+      "id": "15"
+    },
+    {
+      "product_name": "Giường tầng",
+      "price": 9800000,
+      "size": [
+        "1.2m x 2m"
+      ],
+      "category": "Trẻ em",
+      "old_price": 11000000,
+      "material": [
+        {
+          "name": "Gỗ thông",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ sồi",
+          "quantity": 50
+        }
+      ],
+      "image": "images/products/tre-em/016.jpg",
+      "details": {
+        "des1": "- Với đa dạng kích thước sẽ làm cho không gian phòng ngủ của bạn sẽ sang trọng và tiện nghi hơn. Bạn có thể thoải mái ngả lưng trên chiếc giường sang trọng mang lại cho bạn giấc ngủ sâu và thoải mái.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/tre-em/016.jpg"
+      ],
+      "color": "Trắng",
+      "id": "16"
+    },
+    {
+      "product_name": "Bàn học",
+      "price": 2890000,
+      "size": [
+        "120 x 50 x 60cm"
+      ],
+      "category": "Trẻ em",
+      "old_price": 3500000,
+      "material": [
+        {
+          "name": "Gỗ thông",
+          "quantity": 50
+        }
+      ],
+      "image": "images/products/tre-em/017.jpg",
+      "details": {
+        "des1": "- Có thể được sử dụng như bàn làm việc, bàn học tại nhà, mang đến cho người dùng không gian làm việc, học tập hiệu quả với thiết kế giá sách đi kèm.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/tre-em/017.jpg"
+      ],
+      "color": "Vàng nhạt",
+      "id": "17"
+    },
+    {
+      "product_name": "Ghế văn phòng",
+      "price": 5700000,
+      "size": [
+        "66 x 135cm"
+      ],
+      "category": "Văn phòng",
+      "old_price": 6000000,
+      "material": [
+        {
+          "name": "Vải lưới",
+          "quantity": 50
+        }
+      ],
+      "image": "images/products/van-phong/018.jpg",
+      "details": {
+        "des1": "- Với kiểu dáng hiện đại, sang trọng,  trẻ trung, đang là sự lựa chọn hàng đầu hiện nay bởi các tính năng mà nó đem lại cho người sử dụng.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4.5,
+      "img_slide": [
+        "images/products/van-phong/018.jpg"
+      ],
+      "color": "Đen",
+      "id": "18"
+    },
+    {
+      "product_name": "Cầu thang",
+      "price": 30000000,
+      "size": [
+        "Kích thước theo yêu cầu"
+      ],
+      "category": "Cầu thang",
+      "old_price": 35000000,
+      "material": [
+        {
+          "name": "Liên hệ trực tiếp để đặt",
+          "quantity": 0
+        }
+      ],
+      "image": "images/products/cau-thang/019.jpg",
+      "details": {
+        "des1": "- Liên hệ trực tiếp để biết thêm thông tin sản phẩm và đặt hàng.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/cau-thang/019.jpg"
+      ],
+      "color": "",
+      "id": "19"
+    },
+    {
+      "product_name": "Đèn chùm",
+      "price": 4300000,
+      "size": [
+        "D100 x H40cm"
+      ],
+      "category": "Đồ trang trí",
+      "old_price": 5300000,
+      "material": [
+        {
+          "name": "Pha lê",
+          "quantity": 50
+        }
+      ],
+      "image": "images/products/do-trang-tri/020.jpg",
+      "details": {
+        "des1": "- Là loại đèn led hiện đại phù hợp với nhiều không gian nội thất khác nhau nên có thể đáp ứng mọi nhu cầu của người tiêu dùng.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/do-trang-tri/020.jpg"
+      ],
+      "color": "Trong suốt",
+      "id": "20"
+    },
+    {
+      "product_name": "test",
+      "price": 222,
+      "size": [
+        "D100 x H40cm"
+      ],
+      "category": "Đồ trang trí",
+      "old_price": 5300000,
+      "material": [
+        {
+          "name": "Pha lê",
+          "quantity": 50
+        }
+      ],
+      "image": "images/products/do-trang-tri/020.jpg",
+      "details": {
+        "des1": "- Là loại đèn led hiện đại phù hợp với nhiều không gian nội thất khác nhau nên có thể đáp ứng mọi nhu cầu của người tiêu dùng.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 5,
+      "img_slide": [
+        "images/products/do-trang-tri/020.jpg"
+      ],
+      "color": "Trong suốt",
+      "id": "21"
+    }
+  ],
+  "categories-product": [
+    "Phòng khách",
+    "Phòng bếp",
+    "Phòng ngủ",
+    "Phòng tắm",
+    "Trẻ em",
+    "Văn phòng",
+    "Cầu thang",
+    "Đồ trang trí"
+  ],
+  "news": [
+    {
+      "title": "Cách chọn Sofa cho phòng khách thêm sang trọng",
+      "content": "Không phải ai trong chúng ta cũng biết cách chọn màu sofa cho phòng khách trở nên sang trọng và đẹp mắt hơn. Tuy nhiên, đây là yếu tố quyết định phần lớn đến tính thẩm mỹ của toàn bộ ngôi nhà.",
+      "create_date": 1660013411482,
+      "view": 100,
+      "image": "images/news/01.jpg",
+      "id": "1"
+    },
+    {
+      "title": "Trang trí phòng khách cho thêm năng động",
+      "content": "Không cần quá đầu tư quá nhiều tiền vào những món đồ sang trong cho việc trang trí phòng khách. Bạn vẫn có thể sở hữu không gian phòng khách đẹp với những mẹo không phải ai cũng sẵn sàng chỉ cho bạn. ",
+      "create_date": 1662623411482,
+      "view": 73,
+      "image": "images/news/02.jpg",
+      "id": "2"
+    },
+    {
+      "title": "Cập nhật xu hướng phòng khách phong cách tối giản",
+      "content": "Nhịp độ cuộc sống ngày một nhanh, mật độ dân số cũng tăng cao. Mỗi người đều mơ ước có một không gian thoáng đãng, thoải mái và tràn ngập ánh sáng cho không gian nhà ở của mình.",
+      "create_date": 1650233411482,
+      "view": 17,
+      "image": "images/news/03.jpg",
+      "id": "3"
+    },
+    {
+      "title": "Cách sắp xếp vị trí bàn ăn và nhà bếp một cách rộng rãi",
+      "content": "Bàn ăn -  nội thất hàng đầu đáng được quan tâm vì là nơi sum họp của cả gia đình, nhưng chúng ta lại khó có thể sắp xếp một cách phù hợp.",
+      "create_date": 1650023411482,
+      "view": 17,
+      "image": "images/news/04.jpg",
+      "id": "4"
+    },
+    {
+      "title": "Top 10 mẫu nội thất chung cư 1 phòng ngủ",
+      "content": "Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí “hạn hẹp”. Thiết kế nội thất chung cư một phòng ngủ chính là giải pháp tối ưu nhất mang lại một không gian sống hoàn hảo và hiện đại.",
+      "create_date": 1662662287855,
+      "view": 27,
+      "image": "images/news/05.jpg",
+      "id": "5"
+    },
+    {
+      "title": "25+ Mẫu giường ngủ hộc kéo cho phòng nhỏ",
+      "content": "Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ, vì thế việc tạo được một giấc ngủ ngon là một điều đặc biệt quan trọng. Giường ngủ hộc kéo chính là giải pháp thông minh vừa giúp đem lại một giấc ngủ sâu, vừa giúp các gia đình giải quyết hiệu quả bài toán diện tích.",
+      "create_date": 1651023411482,
+      "view": 60,
+      "image": "images/news/06.jpg",
+      "id": "6"
+    }
+  ],
+  "policies": [
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/chinh-sach.jpg",
+      "title": "chính sách giá",
+      "description": "Tốt nhất và công khai giá trên Website"
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/san-pham.jpg",
+      "title": "sản xuất",
+      "description": "Trực tiếp sản xuất bởi đội ngũ nhân viên hàng đầu"
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/chat-luong.jpg",
+      "title": "chất lượng",
+      "description": "Cam kết chất lượng sản phẩm và tiến độ thi công"
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/bao-hanh.jpg",
+      "title": "bảo hành",
+      "description": "Dịch vụ bảo hành sản phẩm tốt nhất khu vực"
+    }
+  ],
+  "mission": [
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/chinh-sach.jpg",
+      "title": "Với xã hội",
+      "description": "Hài hòa lới ích doanh nghiệp với lợi ích xã hội, tích cực cùng cộng đồng xây dựng môi trường sống bền vững."
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/san-pham.jpg",
+      "title": "Với nhân viên",
+      "description": "Trực tiếp sản xuất bởi đội ngũ nhân viên hàng đầu"
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/chat-luong.jpg",
+      "title": "Với thị trường",
+      "description": "Đề cao tinh thần hợp tác cùng phát triển, cam kết trở thành người đồng hành số 1 của đối tác."
+    },
+    {
+      "image": "images/AnhCatTC/ve-chung-toi/bao-hanh.jpg",
+      "title": "Với đối tác",
+      "description": "Dịch vụ bảo hành sản phẩm tốt nhất khu vực"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "category_name": "Phòng khách",
+      "image": "images/AnhCatTC/loai/icon-phong-khach.png"
+    },
+    {
+      "id": 2,
+      "category_name": "Phòng ngủ",
+      "image": "images/AnhCatTC/loai/icon-phong-ngu.png"
+    },
+    {
+      "id": 3,
+      "category_name": "Phòng bếp",
+      "image": "images/AnhCatTC/loai/icon-phong-bep.png"
+    },
+    {
+      "id": 4,
+      "category_name": "Phòng tắm",
+      "image": "images/AnhCatTC/loai/icon-phong-tam.png"
+    },
+    {
+      "id": 5,
+      "category_name": "Trẻ em",
+      "image": "images/AnhCatTC/loai/icon-tre-em.png"
+    },
+    {
+      "id": 6,
+      "category_name": "Văn phòng",
+      "image": "images/AnhCatTC/loai/icon-van-phong.png"
+    },
+    {
+      "id": 7,
+      "category_name": "Cầu thang",
+      "image": "images/AnhCatTC/loai/icon-cau-thang.png"
+    },
+    {
+      "id": 8,
+      "category_name": "Đồ trang trí",
+      "image": "images/AnhCatTC/loai/icon-do-trang-tri.png"
+    }
+  ],
+  "data-banner-home": {
+    "image": "http://cutuananh.devmaster.vn/images/AnhCat/banner.jpg",
+    "link": "/contact",
+    "title": "Thế giới nội thất số 1 việt nam ",
+    "subTitle": "Hoàng Hoan",
+    "description": "Sứ mệnh của chúng tôi là kết hợp hài hòa giữa ý tưởng và mong muốn của khách hàng, đem lại những phút giây thư giãn tuyệt vời bên gia đình và những người thân yêu."
+  },
+  "data-footer": [
+    {
+      "Thông tin chung": [
+        "CÔNG TY TNHH HOÀNG HOAN",
+        "0999.999.999",
+        "cskh@hoanghoan.vn",
+        "Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      ]
+    },
+    {
+      "VỀ CHÚNG TÔI": [
+        "CÔNG TY TNHH HOÀNG HOAN",
+        "0999.999.999",
+        "cskh@hoanghoan.vn",
+        "Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      ]
+    },
+    {
+      "Kết nối với chúng tôi": [
+        "CÔNG TY TNHH HOÀNG HOAN",
+        "0999.999.999",
+        "cskh@hoanghoan.vn",
+        "Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      ]
+    }
+  ],
+  "dataAboutUs": [
+    {
+      "id": 1,
+      "image": "images/AnhCatTC/ve-chung-toi/ve-chung-toi-1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "images/AnhCatTC/ve-chung-toi/ve-chung-toi-2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "images/AnhCatTC/ve-chung-toi/ve-chung-toi-3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "images/AnhCatTC/ve-chung-toi/ve-chung-toi-4.jpg"
+    }
+  ],
+  "wishlist": [
+    {
+      "product_name": "Bàn trà",
+      "price": 3600000,
+      "size": [
+        "Dài 1.1 x Rộng 0.6 x Cao 0.4m"
+      ],
+      "category": "Phòng bếp",
+      "old_price": 4000000,
+      "material": [
+        {
+          "name": "Gỗ tự nhiên",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-bep/009.jpg"
+      ],
+      "details": {
+        "des1": "-  Chất liệu khung kim loại, kính cường lực cao cấp sang trọng. Mẫu bàn trà kim loại đẹp được thiết kế từ đá dày 8ly chịu được những va đập an toàn cho người sử dụng, hạn chế tối đa vết trầy xước, tuổi thọ sử dụng lâu dài hơn.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-bep/009.jpg"
+      ],
+      "color": "Nâu đậm",
+      "id": "9"
+    }
+  ]
+}
