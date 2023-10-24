@@ -27,16 +27,6 @@ function Product(props) {
     }
   };
   const handleClickAddWishList = (product) => {
-    // axios
-    //   .post("wishlist", product)
-    //   .then((response) => {
-    //     toast.success("thêm sản phẩm thành công");
-    //     // Xử lý phản hồi sau khi thực hiện yêu cầu POST
-    //   })
-    //   .catch((error) => {
-    //     toast.success("tồn tại");
-    //     // Xử lý lỗi (nếu có)
-    //   });
     postDataToAPI(product);
   };
   const fetchDataFromAPI = async () => {
@@ -58,6 +48,7 @@ function Product(props) {
       fetchDataFromAPI();
     }
   }, [postData]);
+  console.log(responseData);
   localStorage.setItem("wishlistItems", JSON.stringify(responseData));
   return (
     <div className="col-md-3">

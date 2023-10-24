@@ -2,12 +2,15 @@
 .icon-heart:hover .box-wishlist {
   display: block;
 }
-.number-productsWishlist{
+.number-productWishlist {
+  position: absolute;
   background-color: red;
-  padding: 0.3rem 0.8rem;
+  padding: 0.1rem 0.6rem;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   color: white;
+  top: -35%;
+  left: 60%;
 }
 .box-wishlist::before {
   z-index: 1;

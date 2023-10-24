@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import slugify from "slugify";
 import { context } from "../context/useContext";
 function DataSearchUlLi({ product, valueSearch }) {
-  const { setDataSearch, dataSearch, setValueSearch } = useContext(context);
+  const { setDataSearch } = useContext(context);
   const handleOnclickSeeAll = () => {
     setDataSearch(product);
   };

@@ -10,8 +10,7 @@ function Search() {
   // handle design
 
   const [products, setproducts] = useState([]);
-  let { dataSearch, setDataSearch, valueSearch, setValueSearch } =
-    useContext(context);
+  let { valueSearch, setValueSearch } = useContext(context);
   useEffect(() => {
     const getAllProductsSearch = async () => {
       let respone = await apiXM.get("/products");
@@ -41,7 +40,6 @@ function Search() {
     // setDataSearch();
     setproducts(products);
   };
-  console.log(valueSearch);
   return (
     <>
       <>

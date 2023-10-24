@@ -1,34 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "../api/apiXM";
 import BoxWishList from "./BoxWishList";
+import { context } from "../context/useContext";
 function ProductsHeart() {
-  const [wishList, setWishList] = useState([]);
-
-  let list = JSON.parse(localStorage.getItem("wishlistItems"));
+  const { responseData } = useContext(context);
+  const [local, setLocal] = useState(() => {
+    const list = JSON.parse(localStorage.getItem("wishlistItems"));
+    if (list === null || list.length === 0) {
+    console.log(1);
+    return responseData;
+    }
+    console.log(1);
+    return list;
+  });
   useEffect(() => {
-    // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
-    axios
-      .get("wishlist")
-      .then((response) => {
-        // Xử lý dữ liệu từ phản hồi
-        setWishList(response.data);
-      })
-      .catch((error) => {
-        // Xử lý lỗi (nếu có)
-        console.error(error);
-      });
-  }, [list]);
+    const x = JSON.parse(localStorage.getItem("wishlistItems"));
+    setLocal(x);
+    console.log(1);
+    // // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
+    // axios
+    //   .get("wishlist")
+    //   .then((response) => {
+    //     // Xử lý dữ liệu từ phản hồi
+    //     // setWishList(response.data);
+    //   })
+    //   .catch((error) => {
+    //     // Xử lý lỗi (nếu có)
+    //     console.error(error);
+    //   });
+  }, [responseData]);
   return (
     <div
       href="/#"
       className="item-icon icon-heart  d-flex justify-content-center align-items-center position-relative"
     >
-      <a href="/danh-sach-yeu-thich">
+      <Link to={"/danh-sach-yeu-thich"}>
         <i className="fa-regular fa-heart" />
-      </a>
+      </Link>
       <div className=" box-heart">
-        {list === null || (list !== null && list.length === 0) ? (
+        {local === null || (local !== null && local.length === 0) ? (
           // /products
           <div className="box__empty">
             <p className="box__title">Danh sách của bạn đang trống !</p>
@@ -40,20 +51,20 @@ function ProductsHeart() {
           </div>
         ) : (
           <div className=" box-wishlist">
-            <div class="box__title">Danh sách yêu thích</div>
-            {wishList.map((item) => (
+            <div className="box__title">Danh sách yêu thích</div>
+            {local.map((item) => (
               <BoxWishList wishlist={item} key={item.id} />
             ))}
             <div className="check">
-              <p>có {list.length} sản phẩm</p>
-              <a className="check__btn" href="/danh-sach-yeu-thich">
+              <p>có {local.length} sản phẩm</p>
+              <Link className="check__btn" to={"/danh-sach-yeu-thich"}>
                 Xem chi tiết
-              </a>
+              </Link>
             </div>
           </div>
         )}
       </div>
-      <div className="number-productWishlist">{wishList.length}</div>
+      <div className="number-productWishlist">{local.length}</div>
     </div>
   );
 }

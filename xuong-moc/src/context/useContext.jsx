@@ -8,8 +8,7 @@ const ContextProvider = ({ children }) => {
   const [navList, setNavList] = useState(dataNavList);
   const [slider, setSLider] = useState([]);
   const [dataSearch, setDataSearch] = useState([]);
-  console.log(dataSearch);
-  const [responseData, setResponseData] = useState({});
+  const [responseData, setResponseData] = useState([]);
   const [valueSearch, setValueSearch] = useState("");
   // //function
   // function GetTokenFromLocalStorage(key) {
