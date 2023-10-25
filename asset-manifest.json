@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/chihuong28502/xuong-moc/static/css/main.0854b79b.css",
+    "main.js": "/chihuong28502/xuong-moc/static/js/main.95133315.js",
+    "static/js/787.45a57444.chunk.js": "/chihuong28502/xuong-moc/static/js/787.45a57444.chunk.js",
+    "static/media/bg-about-us.jpg": "/chihuong28502/xuong-moc/static/media/bg-about-us.d995350f070cc053aef2.jpg",
+    "static/media/lienhe-bg.jpg": "/chihuong28502/xuong-moc/static/media/lienhe-bg.bf3f6db413e11f547fb1.jpg",
+    "index.html": "/chihuong28502/xuong-moc/index.html",
+    "main.0854b79b.css.map": "/chihuong28502/xuong-moc/static/css/main.0854b79b.css.map",
+    "main.95133315.js.map": "/chihuong28502/xuong-moc/static/js/main.95133315.js.map",
+    "787.45a57444.chunk.js.map": "/chihuong28502/xuong-moc/static/js/787.45a57444.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0854b79b.css",
+    "static/js/main.95133315.js"
+  ]
+}
