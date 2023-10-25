@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom";
 import slugify from "slugify";
 import Product from "../componentChild/Product";
 function AllProducts() {
+  let iconProduct = "fa-regular fa-heart";
+
   let [product, setProduct] = useState([]);
   const { productCategory } = useParams();
   console.log(slugify("ok tuyệt vời lắm"));
@@ -87,7 +89,7 @@ function AllProducts() {
         })}
         <div className="row">
           {product.slice(0, 4).map((item) => (
-            <Product product={item} key={item.id} />
+            <Product iconProduct={iconProduct} product={item} key={item.id} />
           ))}
         </div>
         <div className="load-more">

@@ -4,16 +4,22 @@ import Product from "./Product";
 import axios from "../api/apiXM";
 
 function ShowAllWishList() {
+  let iconProduct = "fa-solid fa-heart-crack";
   const { responseData } = useContext(context);
-  const [data, setData] = useState(() => {
-    const list = JSON.parse(localStorage.getItem("wishlistItems"));
-    if (list === null || list.length === 0) {
-      console.log(1);
-      return responseData;
-    }
-    return list;
-  });
 
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get("wishlist")
+      .then((response) => {
+        // Xử lý dữ liệu từ phản hồi
+        setData(response.data);
+      })
+      .catch((error) => {
+        // Xử lý lỗi (nếu có)
+        console.error(error);
+      });
+  }, []);
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -72,11 +78,16 @@ function ShowAllWishList() {
           </div>
         </div>
         <div className="all-product__item--title">
-          <h4>Danh sách yêu thích ({data.length}sản phẩm) </h4>
+          <h4>Danh sách yêu thích ({responseData.length}sản phẩm) </h4>
         </div>
         <div className="row">
-          {data.map((item) => (
-            <Product product={item} key={item.id} />
+          {responseData.map((item) => (
+            <Product
+              iconProduct={iconProduct}
+              setProduct={setData}
+              product={item}
+              key={item.id}
+            />
           ))}
         </div>
         <div className="load-more">

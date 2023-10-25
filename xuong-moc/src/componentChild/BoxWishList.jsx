@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "../api/apiXM";
 import "../css/boxWishList.css";
 function BoxWishList({ wishlist }) {
+  useEffect(() => {
+    
+  }, [wishlist]);
   return (
     <div className="box__content">
       <div>
-        <a href="/san-pham/phong-khach/ke-do">
+        <a href="/">
           <div className="box__content--data">
             <div className="details">
               <img

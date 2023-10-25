@@ -4,30 +4,50 @@ import { context } from "../context/useContext";
 import axios from "../api/apiXM";
 
 function Product(props) {
-  const { product } = props;
+  const { product, iconProduct, setProduct } = props;
   const [postData, setPostData] = useState({});
   const { responseData, setResponseData } = useContext(context);
   const [isLoading, setIsLoading] = useState(false);
-  const postDataToAPI = async (product) => {
-    try {
-      setIsLoading(true);
+  const [deletedObjectId, setDeletedObjectId] = useState(null);
+  const postOrDeleteDataToAPI = async (product) => {
+    if (iconProduct == "fa-regular fa-heart") {
+      try {
+        setIsLoading(true);
 
-      // Thực hiện yêu cầu POST
-      const response = await axios.post("wishlist", product);
-      toast.success("thêm sản phẩm thành công");
+        // Thực hiện yêu cầu POST
+        const response = await axios.post("wishlist", product);
+        toast.success("thêm sản phẩm thành công");
+        // Lưu trạng thái POST thành côn
+        setPostData(response.data);
+      } catch (error) {
+        // Xử lý lỗi POST
+        console.error(error);
+        toast.error("Sản phẩm đã tồn tại trong danh mục yêu thích");
+      } finally {
+        setIsLoading(false);
+      }
+    } else {
+      axios
+        .delete(`/wishlist/${product.id}`)
+        .then((response) => {
+          toast.success("Xóa thành công:", deletedObjectId);
 
-      // Lưu trạng thái POST thành công
-      setPostData(response.data);
-    } catch (error) {
-      // Xử lý lỗi POST
-      console.error(error);
-      toast.error("Sản phẩm đã tồn tại trong danh mục yêu thích");
-    } finally {
-      setIsLoading(false);
+          // Cập nhật danh sách đối tượng sau khi xóa
+          const updatedObjects = responseData.filter(
+            (obj) => obj.id !== product.id
+          );
+          setResponseData(updatedObjects);
+          // Đặt giá trị deletedObjectId để thông báo xóa thành công (nếu cần)
+          setDeletedObjectId(product.id);
+        })
+        .catch((error) => {
+            toast.error("Xóa khong thành công:");
+          console.error("Lỗi khi xóa đối tượng:", error);
+        });
     }
   };
   const handleClickAddWishList = (product) => {
-    postDataToAPI(product);
+    postOrDeleteDataToAPI(product);
   };
   const fetchDataFromAPI = async () => {
     try {
@@ -48,7 +68,6 @@ function Product(props) {
       fetchDataFromAPI();
     }
   }, [postData]);
-  console.log(responseData);
   localStorage.setItem("wishlistItems", JSON.stringify(responseData));
   return (
     <div className="col-md-3">
@@ -287,7 +306,7 @@ function Product(props) {
               type="button"
               id="liveToastBtn"
             >
-              <i className="fa-regular fa-heart" />
+              <i className={iconProduct}></i>
             </button>
           </div>
         </div>

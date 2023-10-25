@@ -8,7 +8,7 @@ import Product from "../componentChild/Product";
 import { Link } from "react-router-dom";
 function Products() {
   const [listProducts, setListProducts] = useState([]);
-  let tempProducts = listProducts;
+  let iconProduct = 'fa-regular fa-heart';
   useEffect(() => {
     // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
     axios
@@ -38,7 +38,11 @@ function Products() {
             .filter((x) => x.category === item)
             .slice(0, 4)
             .map((product) => (
-              <Product product={product} key={product.id} />
+              <Product
+                iconProduct={iconProduct}
+                product={product}
+                key={product.id}
+              />
             ))}
         </div>
       </div>

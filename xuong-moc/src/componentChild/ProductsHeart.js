@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "../api/apiXM";
 import BoxWishList from "./BoxWishList";
 import { context } from "../context/useContext";
 function ProductsHeart() {
@@ -8,16 +7,12 @@ function ProductsHeart() {
   const [local, setLocal] = useState(() => {
     const list = JSON.parse(localStorage.getItem("wishlistItems"));
     if (list === null || list.length === 0) {
-    console.log(1);
-    return responseData;
+      return responseData;
     }
-    console.log(1);
     return list;
   });
   useEffect(() => {
-    const x = JSON.parse(localStorage.getItem("wishlistItems"));
-    setLocal(x);
-    console.log(1);
+    setLocal(JSON.parse(localStorage.getItem("wishlistItems")));
     // // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
     // axios
     //   .get("wishlist")
@@ -30,6 +25,7 @@ function ProductsHeart() {
     //     console.error(error);
     //   });
   }, [responseData]);
+  console.log(local);
   return (
     <div
       href="/#"
@@ -64,7 +60,7 @@ function ProductsHeart() {
           </div>
         )}
       </div>
-      <div className="number-productWishlist">{local.length}</div>
+      <div className="number-productWishlist">{local?.length}</div>
     </div>
   );
 }
