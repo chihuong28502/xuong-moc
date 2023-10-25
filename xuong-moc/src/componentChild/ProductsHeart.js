@@ -28,13 +28,13 @@ function ProductsHeart() {
       <Link to={"/danh-sach-yeu-thich"}>
         <i className="fa-regular fa-heart" />
       </Link>
-      <div className=" box-heart">
+      <div className="box-heart">
         {local === null || (local !== null && local.length === 0) ? (
           // /products
-          <div className="box__empty">
+          <div className="box-wishlist__empty position-absolute ">
             <p className="box__title">Danh sách của bạn đang trống !</p>
-            <a href="/san-pham">
-              <Link to={"/products"} className="check__btn">
+            <a href="/san-pham" className="d-block text-center">
+              <Link to={"/products"} className="check__btn ">
                 xem sản phẩm ngay
               </Link>
             </a>

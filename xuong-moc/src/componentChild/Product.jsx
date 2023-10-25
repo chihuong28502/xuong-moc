@@ -13,7 +13,6 @@ function Product(props) {
     if (iconProduct == "fa-regular fa-heart") {
       try {
         setIsLoading(true);
-
         // Thực hiện yêu cầu POST
         const response = await axios.post("wishlist", product);
         toast.success("thêm sản phẩm thành công");
@@ -21,7 +20,6 @@ function Product(props) {
         setPostData(response.data);
       } catch (error) {
         // Xử lý lỗi POST
-        console.error(error);
         toast.error("Sản phẩm đã tồn tại trong danh mục yêu thích");
       } finally {
         setIsLoading(false);
@@ -30,7 +28,6 @@ function Product(props) {
       axios
         .delete(`/wishlist/${product.id}`)
         .then((response) => {
-          console.log(response.data);
           toast.success("Xóa thành công:", deletedObjectId);
           localStorage.removeItem("wishlistItems", product);
           // Cập nhật danh sách đối tượng sau khi xóa

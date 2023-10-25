@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import { context } from "../context/useContext";
 import Product from "./Product";
 import axios from "../api/apiXM";
+import Control from "./Control";
 
 function ShowAllWishList() {
   let iconProduct = "fa-solid fa-heart-crack";
   const { local } = useContext(context);
+  const [sort, setSort] = useState("");
 
   // const [data, setData] = useState([]);
   // useEffect(() => {
@@ -42,51 +44,13 @@ function ShowAllWishList() {
         </div>
       </div> */}
       <div className="all-product__item container">
-        <div className="box-control">
-          <div className="dropdown">
-            <button
-              className="dropdown-toggle"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Sắp xếp
-            </button>
-            <div
-              className="dropdown-menu dropdown-menu-left"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <button className="dropdown-item" title="Giá cao đến thấp">
-                <span />
-                Giá cao đến thấp
-              </button>
-              <button className="dropdown-item" title="Giá thấp đến cao">
-                <span />
-                Giá thấp đến cao
-              </button>
-              <button className="dropdown-item" title="Độ nổi bật">
-                <span />
-                Độ nổi bật
-              </button>
-            </div>
-          </div>
-          <div className="group-filter">
-            <div className="filter-item ">Dưới 5 triệu</div>
-            <div className="filter-item ">Từ 5 - 10 triệu</div>
-            <div className="filter-item ">Trên 10 triệu</div>
-          </div>
-        </div>
+        <Control product={local} sort={sort} setSort={setSort} />
         <div className="all-product__item--title">
           <h4>Danh sách yêu thích ({local.length}sản phẩm) </h4>
         </div>
         <div className="row">
           {local.map((item) => (
-            <Product
-              iconProduct={iconProduct}
-              product={item}
-              key={item.id}
-            />
+            <Product iconProduct={iconProduct} product={item} key={item.id} />
           ))}
         </div>
         <div className="load-more">

@@ -1,4 +1,5 @@
 .icon-cart:hover .box-cart,
+.icon-heart:hover .box-wishlist__empty,
 .icon-heart:hover .box-wishlist {
   display: block;
 }
@@ -12,6 +13,7 @@
   top: -35%;
   left: 60%;
 }
+.box-wishlist__empty ::before,
 .box-wishlist::before {
   z-index: 1;
   position: absolute;
@@ -27,6 +29,7 @@
   border-right: 2px solid transparent;
   background-color: #fff;
 }
+.box-wishlist__empty ::after,
 .box-wishlist::after {
   z-index: 1;
   position: absolute;
@@ -37,7 +40,8 @@
   left: 77%;
   background-color: transparent;
 }
-.box-wishlist {
+.box-wishlist,
+.box-wishlist__empty {
   z-index: 1;
   position: absolute;
   top: 160%;
