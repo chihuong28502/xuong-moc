@@ -10,6 +10,13 @@ const ContextProvider = ({ children }) => {
   const [dataSearch, setDataSearch] = useState([]);
   const [responseData, setResponseData] = useState([]);
   const [valueSearch, setValueSearch] = useState("");
+  const [local, setLocal] = useState(() => {
+    const list = JSON.parse(localStorage.getItem("wishlistItems"));
+    if (list === null || list.length === 0) {
+      return responseData;
+    }
+    return list;
+  });
   // //function
   // function GetTokenFromLocalStorage(key) {
   //   return localStorage.getItem(key);
@@ -22,6 +29,8 @@ const ContextProvider = ({ children }) => {
     navList,
     responseData,
     setResponseData,
+    local,
+    setLocal,
     slider,
     urlBaseImage,
     setSLider,

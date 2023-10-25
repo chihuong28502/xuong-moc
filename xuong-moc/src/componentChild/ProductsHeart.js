@@ -4,13 +4,7 @@ import BoxWishList from "./BoxWishList";
 import { context } from "../context/useContext";
 function ProductsHeart() {
   const { responseData } = useContext(context);
-  const [local, setLocal] = useState(() => {
-    const list = JSON.parse(localStorage.getItem("wishlistItems"));
-    if (list === null || list.length === 0) {
-      return responseData;
-    }
-    return list;
-  });
+  const { local, setLocal } = useContext(context);
   useEffect(() => {
     setLocal(JSON.parse(localStorage.getItem("wishlistItems")));
     // // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác

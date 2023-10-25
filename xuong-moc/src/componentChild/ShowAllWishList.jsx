@@ -5,21 +5,21 @@ import axios from "../api/apiXM";
 
 function ShowAllWishList() {
   let iconProduct = "fa-solid fa-heart-crack";
-  const { responseData } = useContext(context);
+  const { local } = useContext(context);
 
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("wishlist")
-      .then((response) => {
-        // Xử lý dữ liệu từ phản hồi
-        setData(response.data);
-      })
-      .catch((error) => {
-        // Xử lý lỗi (nếu có)
-        console.error(error);
-      });
-  }, []);
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("wishlist")
+  //     .then((response) => {
+  //       // Xử lý dữ liệu từ phản hồi
+  //       setData(response.data);
+  //     })
+  //     .catch((error) => {
+  //       // Xử lý lỗi (nếu có)
+  //       console.error(error);
+  //     });
+  // }, []);
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -78,13 +78,12 @@ function ShowAllWishList() {
           </div>
         </div>
         <div className="all-product__item--title">
-          <h4>Danh sách yêu thích ({responseData.length}sản phẩm) </h4>
+          <h4>Danh sách yêu thích ({local.length}sản phẩm) </h4>
         </div>
         <div className="row">
-          {responseData.map((item) => (
+          {local.map((item) => (
             <Product
               iconProduct={iconProduct}
-              setProduct={setData}
               product={item}
               key={item.id}
             />

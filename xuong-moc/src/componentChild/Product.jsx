@@ -4,7 +4,7 @@ import { context } from "../context/useContext";
 import axios from "../api/apiXM";
 
 function Product(props) {
-  const { product, iconProduct, setProduct } = props;
+  const { product, iconProduct } = props;
   const [postData, setPostData] = useState({});
   const { responseData, setResponseData } = useContext(context);
   const [isLoading, setIsLoading] = useState(false);
@@ -30,8 +30,9 @@ function Product(props) {
       axios
         .delete(`/wishlist/${product.id}`)
         .then((response) => {
+          console.log(response.data);
           toast.success("Xóa thành công:", deletedObjectId);
-
+          localStorage.removeItem("wishlistItems", product);
           // Cập nhật danh sách đối tượng sau khi xóa
           const updatedObjects = responseData.filter(
             (obj) => obj.id !== product.id
@@ -41,8 +42,7 @@ function Product(props) {
           setDeletedObjectId(product.id);
         })
         .catch((error) => {
-            toast.error("Xóa khong thành công:");
-          console.error("Lỗi khi xóa đối tượng:", error);
+          toast.error("Xóa khong thành công:");
         });
     }
   };
