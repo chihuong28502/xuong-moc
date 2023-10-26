@@ -1221,6 +1221,37 @@
       ],
       "color": "Trắng",
       "id": "4"
+    },
+    {
+      "product_name": "Bàn uống nước 2",
+      "price": 3290000,
+      "size": [
+        "Dài 1.2 x Rộng 0.65 x Cao 0.45m"
+      ],
+      "category": "Phòng khách",
+      "old_price": 4000000,
+      "material": [
+        {
+          "name": "Mặt đá",
+          "quantity": 50
+        }
+      ],
+      "image": [
+        "images/products/phong-khach/014.jpg"
+      ],
+      "details": {
+        "des1": "- Bàn uống nước hiện đại giá rẻ là sản phẩm nội thất cần thiết để tăng tối đa sự tiện nghi và vẻ đẹp của bộ ghế sofa cũng như nội thất phòng khách, phòng chờ.",
+        "des2": "- Thông số ...",
+        "des3": "- Bảo quản ...",
+        "des4": "- Bảo hành 1 năm ...",
+        "des5": "- Cam kết ..."
+      },
+      "rating": 4,
+      "img_slide": [
+        "images/products/phong-khach/014.jpg"
+      ],
+      "color": "Đen",
+      "id": "14"
     }
   ]
 }

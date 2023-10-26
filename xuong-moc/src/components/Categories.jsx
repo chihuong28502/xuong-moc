@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "../api/apiXMSwaggerUI";
+import { Link } from "react-router-dom";
+import slugify from "slugify";
 // http://cutuananh.devmaster.vn/images/AnhCatTC/loai/
 function Categories() {
   const [categories, setCategories] = useState([]);
@@ -18,13 +20,13 @@ function Categories() {
         <div className="row">
           {categories.map((category) => (
             <div className="col-md-3 my-5" key={category.id}>
-              <a href="/san-pham/phong-khach">
+              <Link to={`/products/${slugify(category.slug)}`}>
                 <img
                   src={`http://apixm.devmaster.vn/${category.icon}`}
                   alt=""
                 />
                 <p>{category.title}</p>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
