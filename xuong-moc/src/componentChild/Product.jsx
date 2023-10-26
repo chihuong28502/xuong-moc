@@ -28,7 +28,7 @@ function Product(props) {
       axios
         .delete(`/wishlist/${product.id}`)
         .then((response) => {
-          toast.success("Xóa thành công:", deletedObjectId);
+          toast.success("Xóa thành công");
           localStorage.removeItem("wishlistItems", product);
           // Cập nhật danh sách đối tượng sau khi xóa
           const updatedObjects = responseData.filter(

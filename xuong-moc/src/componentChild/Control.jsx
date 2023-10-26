@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 
 function Control({ onFilter, product, sort, setSort }) {
   const handleSort = (e) => {
+    let arrFill = product;
     setSort(e.target.value);
     if (e.target.value !== "" || e.target.value !== undefined) {
       let arr = e.target.value.split("-");
       if (arr[0] === "price") {
         if (arr[1] === "ASC") {
           product.sort((x, y) => {
+            console.log(1);
             return y.price - x.price;
           });
         } else {

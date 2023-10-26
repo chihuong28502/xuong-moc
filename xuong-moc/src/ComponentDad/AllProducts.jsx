@@ -9,6 +9,7 @@ import Product from "../componentChild/Product";
 import Control from "../componentChild/Control";
 function AllProducts() {
   let iconProduct = "fa-regular fa-heart";
+  let [numberLoad, setNumberLoad] = useState(4);
   const [product, setProduct] = useState([]);
 
   const [sort, setSort] = useState("");
@@ -28,6 +29,11 @@ function AllProducts() {
     console.log(filter);
     setFilter(filter);
   };
+  const handleShowAllProducts = () => {
+    setNumberLoad(numberLoad + 4);
+    console.log(numberLoad);
+  };
+  useEffect(() => {}, [numberLoad]);
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -68,7 +74,7 @@ function AllProducts() {
         <div className="row">
           {filters === undefined
             ? product
-                .slice(0, 4)
+                .slice(0, numberLoad)
                 .map((item) => (
                   <Product
                     iconProduct={iconProduct}
@@ -78,7 +84,7 @@ function AllProducts() {
                   />
                 ))
             : filters
-                .slice(0, 4)
+                .slice(0, numberLoad)
                 .map((item) => (
                   <Product
                     iconProduct={iconProduct}
@@ -89,7 +95,11 @@ function AllProducts() {
                 ))}
         </div>
         <div className="load-more">
-          <button type="button" className="load-more__btn">
+          <button
+            type="button"
+            className="load-more__btn"
+            onClick={handleShowAllProducts}
+          >
             Xem thêm
           </button>
         </div>

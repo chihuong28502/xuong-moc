@@ -5,9 +5,14 @@ import axios from "../api/apiXM";
 import Control from "./Control";
 
 function ShowAllWishList() {
+  let [numberLoad, setNumberLoad] = useState(4);
   let iconProduct = "fa-solid fa-heart-crack";
   const { local, setLocal } = useContext(context);
   const [sort, setSort] = useState("");
+  const handleShowAllProducts = () => {
+    setNumberLoad(numberLoad + local.length);
+    console.log(numberLoad);
+  };
   useEffect(() => {
     const getData = async () => {
       let res = await axios.get("wishlist");
@@ -33,6 +38,7 @@ function ShowAllWishList() {
     setFilters(filter);
     console.log(filter);
   };
+  useEffect(() => {}, [numberLoad]);
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -67,7 +73,7 @@ function ShowAllWishList() {
         <div className="row">
           {filters === undefined
             ? local
-                .slice(0, 4)
+                .slice(0, numberLoad)
                 .map((item) => (
                   <Product
                     iconProduct={iconProduct}
@@ -77,7 +83,7 @@ function ShowAllWishList() {
                   />
                 ))
             : filters
-                .slice(0, 4)
+                .slice(0, numberLoad)
                 .map((item) => (
                   <Product
                     iconProduct={iconProduct}
@@ -91,7 +97,11 @@ function ShowAllWishList() {
           ))} */}
         </div>
         <div className="load-more">
-          <button type="button" className="load-more__btn">
+          <button
+            type="button"
+            className="load-more__btn"
+            onClick={handleShowAllProducts}
+          >
             Xem thêm
           </button>
         </div>
