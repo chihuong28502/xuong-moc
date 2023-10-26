@@ -19,7 +19,6 @@ function ProductsHeart() {
     //     console.error(error);
     //   });
   }, [responseData]);
-  console.log(local);
   return (
     <div
       href="/#"

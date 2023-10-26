@@ -884,64 +884,28 @@
   ],
   "wishlist": [
     {
-      "product_name": "Bàn uống nước",
-      "price": 8990000,
+      "product_name": "Tủ âm tường",
+      "price": 8900000,
       "size": [
-        "Cao 0.4 x Rộng 0.5 x Dài 1m"
+        "Dài 800 x Rộng 480mm"
       ],
-      "category": "Phòng khách",
+      "category": "Phòng tắm",
       "old_price": 9500000,
       "material": [
         {
-          "name": "Gỗ sồi",
+          "name": "Gỗ lim",
           "quantity": 50
         },
         {
-          "name": "Gỗ lim",
+          "name": "Gỗ MFC chống ẩm",
           "quantity": 50
         }
       ],
       "image": [
-        "images/products/phong-khach/001.jpg"
+        "images/products/phong-tam/010.jpg"
       ],
       "details": {
-        "des1": "- Bàn uống nước hiện đại giá rẻ là sản phẩm nội thất cần thiết để tăng tối đa sự tiện nghi và vẻ đẹp của bộ ghế sofa cũng như nội thất phòng khách, phòng chờ. ",
-        "des2": "- Thông số ...",
-        "des3": "- Bảo quản ...",
-        "des4": "- Bảo hành 1 năm ...",
-        "des5": "- Cam kết ..."
-      },
-      "rating": 5,
-      "img_slide": [
-        "images/products/phong-khach/001.jpg",
-        "images/products/phong-khach/001a.jpg",
-        "images/products/phong-khach/001b.jpg",
-        "images/products/phong-khach/001c.jpg",
-        "images/products/phong-khach/001d.jpg",
-        "images/products/phong-khach/001e.jpg"
-      ],
-      "color": "Nâu đậm",
-      "id": "1"
-    },
-    {
-      "product_name": "Bồn rửa 2",
-      "price": 3300000,
-      "size": [
-        "400 X 400 X 150mm"
-      ],
-      "category": "Phòng tắm",
-      "old_price": 4000000,
-      "material": [
-        {
-          "name": "Sứ tráng men",
-          "quantity": 50
-        }
-      ],
-      "image": [
-        "images/products/phong-tam/015.jpg"
-      ],
-      "details": {
-        "des1": "- Sản phẩm được áp dụng công nghệ men sứ Nano có khả năng kháng khuẩn giúp bạn dễ dàng vệ sinh hơn các loại men sứ thông thường khác.",
+        "des1": "- Tủ âm tường là loại tủ được làm âm và sâu vào bên trong hốc tường nhằm tận dụng những phần khoảng trống trong không gian để tiết kiệm diện tích và tạo sự liền mạch.",
         "des2": "- Thông số ...",
         "des3": "- Bảo quản ...",
         "des4": "- Bảo hành 1 năm ...",
@@ -949,41 +913,10 @@
       },
       "rating": 4,
       "img_slide": [
-        "images/products/phong-tam/015.jpg"
+        "images/products/phong-tam/010.jpg"
       ],
-      "color": "Trắng sứ",
-      "id": "15"
-    },
-    {
-      "product_name": "Bồn rửa tay",
-      "price": 3900000,
-      "size": [
-        "430 x 430 x 150 mm"
-      ],
-      "category": "Phòng tắm",
-      "old_price": 3950000,
-      "material": [
-        {
-          "name": "Sứ tráng men",
-          "quantity": 0
-        }
-      ],
-      "image": [
-        "images/products/phong-tam/006.jpg"
-      ],
-      "details": {
-        "des1": "- Sản phẩm được áp dụng công nghệ men sứ Nano có khả năng kháng khuẩn giúp bạn dễ dàng vệ sinh hơn các loại men sứ thông thường khác.",
-        "des2": "- Thông số ...",
-        "des3": "- Bảo quản ...",
-        "des4": "- Bảo hành 1 năm ...",
-        "des5": "- Cam kết ..."
-      },
-      "rating": 4.5,
-      "img_slide": [
-        "images/products/phong-tam/006.jpg"
-      ],
-      "color": "Trắng sứ",
-      "id": "6"
+      "color": "Màu inox đặc trưng",
+      "id": "10"
     }
   ]
 }

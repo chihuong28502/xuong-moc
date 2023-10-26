@@ -10,6 +10,7 @@ import Control from "../componentChild/Control";
 function AllProducts() {
   let iconProduct = "fa-regular fa-heart";
   const [product, setProduct] = useState([]);
+
   const [sort, setSort] = useState("");
 
   const { productCategory } = useParams();
@@ -22,7 +23,11 @@ function AllProducts() {
     };
     getProduct();
   }, []);
-
+  const [filters, setFilter] = useState();
+  const handleFilter = (filter) => {
+    console.log(filter);
+    setFilter(filter);
+  };
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -45,7 +50,12 @@ function AllProducts() {
         </div>
       </div> */}
       <div className="all-product__item container">
-        <Control sort={sort} setSort={setSort} product={product} />
+        <Control
+          onFilter={handleFilter}
+          sort={sort}
+          setSort={setSort}
+          product={product}
+        />
         {listCategories.map((item, index) => {
           if (slugify(item).toLowerCase() === productCategory) {
             return (
@@ -56,9 +66,27 @@ function AllProducts() {
           }
         })}
         <div className="row">
-          {product.slice(0, 4).map((item) => (
-            <Product iconProduct={iconProduct} product={item} key={item.id} />
-          ))}
+          {filters === undefined
+            ? product
+                .slice(0, 4)
+                .map((item) => (
+                  <Product
+                    iconProduct={iconProduct}
+                    filters={filters}
+                    product={item}
+                    key={item.id}
+                  />
+                ))
+            : filters
+                .slice(0, 4)
+                .map((item) => (
+                  <Product
+                    iconProduct={iconProduct}
+                    filters={filters}
+                    product={item}
+                    key={item.id}
+                  />
+                ))}
         </div>
         <div className="load-more">
           <button type="button" className="load-more__btn">

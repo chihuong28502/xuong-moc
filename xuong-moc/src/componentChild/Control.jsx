@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-function Control({ product, sort, setSort }) {
+function Control({ onFilter, product, sort, setSort }) {
   const handleSort = (e) => {
-    console.log(product);
-    console.log(e.target.value);
     setSort(e.target.value);
     if (e.target.value !== "" || e.target.value !== undefined) {
       let arr = e.target.value.split("-");
@@ -26,7 +24,26 @@ function Control({ product, sort, setSort }) {
       }
     }
   };
+  const [filter, setFilter] = useState();
   useEffect(() => {}, [sort]);
+  const handleFilter = (e) => {
+    let arrFill = product;
+    let className = e.target.className;
+    if (className.includes("min")) {
+      console.log(1);
+      setFilter(arrFill.filter((item) => item.price < 5000000));
+    } else if (className.includes("medium")) {
+      console.log(2);
+      setFilter(
+        arrFill.filter((item) => item.price > 5000000 && item.price < 10000000)
+      );
+    } else {
+      console.log(3);
+      setFilter(arrFill.filter((item) => item.price > 10000000));
+    }
+  };
+  onFilter(filter);
+
   return (
     <div className="box-control">
       <div className="dropdown">
@@ -48,9 +65,15 @@ function Control({ product, sort, setSort }) {
         </select>
       </div>
       <div className="group-filter">
-        <div className="filter-item ">Dưới 5 triệu</div>
-        <div className="filter-item ">Từ 5 - 10 triệu</div>
-        <div className="filter-item ">Trên 10 triệu</div>
+        <div className="filter-item min" onClick={handleFilter}>
+          Dưới 5 triệu
+        </div>
+        <div className="filter-item medium" onClick={handleFilter}>
+          Từ 5 - 10 triệu
+        </div>
+        <div className="filter-item max" onClick={handleFilter}>
+          Trên 10 triệu
+        </div>
       </div>
     </div>
   );

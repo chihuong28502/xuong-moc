@@ -6,9 +6,15 @@ import Control from "./Control";
 
 function ShowAllWishList() {
   let iconProduct = "fa-solid fa-heart-crack";
-  const { local } = useContext(context);
+  const { local, setLocal } = useContext(context);
   const [sort, setSort] = useState("");
-
+  useEffect(() => {
+    const getData = async () => {
+      let res = await axios.get("wishlist");
+      setLocal(res.data);
+    };
+    getData();
+  }, []);
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   axios
@@ -22,6 +28,11 @@ function ShowAllWishList() {
   //       console.error(error);
   //     });
   // }, []);
+  const [filters, setFilters] = useState();
+  const handleFilter = (filter) => {
+    setFilters(filter);
+    console.log(filter);
+  };
   return (
     <div className="box-content all-product">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
@@ -44,14 +55,40 @@ function ShowAllWishList() {
         </div>
       </div> */}
       <div className="all-product__item container">
-        <Control product={local} sort={sort} setSort={setSort} />
+        <Control
+          product={local}
+          sort={sort}
+          setSort={setSort}
+          onFilter={handleFilter}
+        />
         <div className="all-product__item--title">
           <h4>Danh sách yêu thích ({local.length}sản phẩm) </h4>
         </div>
         <div className="row">
-          {local.map((item) => (
+          {filters === undefined
+            ? local
+                .slice(0, 4)
+                .map((item) => (
+                  <Product
+                    iconProduct={iconProduct}
+                    filters={filters}
+                    product={item}
+                    key={item.id}
+                  />
+                ))
+            : filters
+                .slice(0, 4)
+                .map((item) => (
+                  <Product
+                    iconProduct={iconProduct}
+                    filters={filters}
+                    product={item}
+                    key={item.id}
+                  />
+                ))}
+          {/* {local.map((item) => (
             <Product iconProduct={iconProduct} product={item} key={item.id} />
-          ))}
+          ))} */}
         </div>
         <div className="load-more">
           <button type="button" className="load-more__btn">
