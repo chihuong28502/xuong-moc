@@ -884,59 +884,59 @@
   ],
   "wishlist": [
     {
-      "product_name": "Bàn ăn",
-      "price": 10550000,
+      "product_name": "SOFA",
+      "price": 8400000,
       "size": [
-        "Cao 0.75 x Rộng 0.8 x Dài 1.6m"
+        "Dài 2.4 x Rộng 1.6 x Cao 0.8m"
       ],
-      "category": "Phòng bếp",
-      "old_price": 12000000,
+      "category": "Phòng khách",
+      "old_price": 10000000,
       "material": [
         {
-          "name": "Gỗ lim",
-          "quantity": 50
-        },
-        {
-          "name": "Gỗ sồi",
+          "name": "Bọc vải nỉ",
           "quantity": 50
         }
       ],
       "image": [
-        "images/products/phong-bep/004.jpg"
+        "images/products/phong-khach/011.jpg"
       ],
       "details": {
-        "des1": "- Bộ bàn ăn hiện đại có kích thước vừa đủ để không chiếm quá nhiều diện tích của phòng ăn. Chỉ cần một góc nhỏ với bộ bàn ăn, bạn đã có một bữa cơm gia đình đầm ấm.",
+        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại sofa văng sofa góc, sofa giá rẻ, sofa hiện đại.",
         "des2": "- Thông số ...",
         "des3": "- Bảo quản ...",
         "des4": "- Bảo hành 1 năm ...",
         "des5": "- Cam kết ..."
       },
-      "rating": 4.5,
+      "rating": 5,
       "img_slide": [
-        "images/products/phong-bep/004.jpg"
+        "images/products/phong-khach/011.jpg"
       ],
-      "color": "Trắng",
-      "id": "4"
+      "color": "Vàng cam",
+      "id": "11"
     },
     {
-      "product_name": "Bàn uống nước 2",
-      "price": 3290000,
+      "product_name": "Kệ đồ",
+      "price": 4990000,
       "size": [
-        "Dài 1.2 x Rộng 0.65 x Cao 0.45m"
+        "Rộng 0.4 x Cao 0.5 x Dài 1.6m"
       ],
       "category": "Phòng khách",
-      "old_price": 4000000,
+      "old_price": 6000000,
       "material": [
         {
-          "name": "Mặt đá",
-          "quantity": 50
+          "name": "Gỗ lim",
+          "quantity": 0
+        },
+        {
+          "name": "Gỗ sồi",
+          "quantity": 0
         }
       ],
       "image": [
-        "images/products/phong-khach/014.jpg"
+        "images/products/phong-khach/008.jpg"
       ],
       "details": {
-        "des1": "- Bàn uống nước hiện đại giá rẻ là sản phẩm nội thất cần thiết để tăng tối đa sự tiện nghi và vẻ đẹp của bộ ghế sofa cũng như nội thất phòng khách, phòng chờ.",
+        "des1": "- Kệ để đồ trang trí với màu sắc sang trọng được làm từ loại gỗ nhập khẩu cao cấp, đảm bảo chắc chắn và bền đẹp. Loại kệ này rất thích hợp dùng cho văn phòng và gia đình để trưng bày đồ trang trí và sách.",
         "des2": "- Thông số ...",
         "des3": "- Bảo quản ...",
         "des4": "- Bảo hành 1 năm ...",
@@ -944,39 +944,49 @@
       },
       "rating": 4,
       "img_slide": [
-        "images/products/phong-khach/014.jpg"
+        "images/products/phong-khach/008.jpg"
       ],
-      "color": "Đen",
-      "id": "14"
+      "color": "Nâu vân gỗ",
+      "id": "8"
     },
     {
-      "product_name": "Ghế văn phòng",
-      "price": 5700000,
+      "product_name": "Kệ TV",
+      "price": 4560000,
       "size": [
-        "66 x 135cm"
+        "Cao 0.5 x Rộng 0.4 x Dài 2m"
       ],
-      "category": "Văn phòng",
-      "old_price": 6000000,
+      "category": "Phòng khách",
+      "old_price": 5200000,
       "material": [
         {
-          "name": "Vải lưới",
+          "name": "Gỗ sồi",
+          "quantity": 50
+        },
+        {
+          "name": "Gỗ lim",
+          "quantity": 0
+        },
+        {
+          "name": "Gỗ tràm",
           "quantity": 50
         }
       ],
-      "image": "images/products/van-phong/018.jpg",
+      "image": [
+        "images/products/phong-khach/002.jpg"
+      ],
       "details": {
-        "des1": "- Với kiểu dáng hiện đại, sang trọng,  trẻ trung, đang là sự lựa chọn hàng đầu hiện nay bởi các tính năng mà nó đem lại cho người sử dụng.",
+        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại kệ tivi giá rẻ, kệ tivi hiện đại. ",
         "des2": "- Thông số ...",
         "des3": "- Bảo quản ...",
         "des4": "- Bảo hành 1 năm ...",
         "des5": "- Cam kết ..."
       },
-      "rating": 4.5,
+      "rating": 4,
       "img_slide": [
-        "images/products/van-phong/018.jpg"
+        "images/products/phong-khach/002.jpg"
       ],
-      "color": "Đen",
-      "id": "18"
+      "color": "Nâu vân gỗ",
+      "id": "2"
     }
   ]
 }
