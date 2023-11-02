@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Navigate() {
   const { navList } = useContext(context);
-
+  
   const activeClassName = ({ isActive }) => {
     return isActive ? "nav-item active" : "nav-item";
   };

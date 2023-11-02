@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 function Control({ onFilter, product, sort, setSort }) {
   const handleSort = (e) => {
-    let arrFill = product;
     setSort(e.target.value);
     if (e.target.value !== "" || e.target.value !== undefined) {
       let arr = e.target.value.split("-");
@@ -10,17 +9,17 @@ function Control({ onFilter, product, sort, setSort }) {
         if (arr[1] === "ASC") {
           product.sort((x, y) => {
             console.log(1);
-            return y.price - x.price;
+            return y.priceNew - x.priceNew;
           });
         } else {
           product.sort((x, y) => {
-            return x.price - y.price;
+            return x.priceNew - y.priceNew;
           });
         }
       } else {
         if (arr[1] === "ASC") {
           product.sort((x, y) => {
-            return y.rating - x.rating;
+            return y.likes - x.likes;
           });
         }
       }
@@ -33,15 +32,17 @@ function Control({ onFilter, product, sort, setSort }) {
     let className = e.target.className;
     if (className.includes("min")) {
       console.log(1);
-      setFilter(arrFill.filter((item) => item.price < 5000000));
+      setFilter(arrFill.filter((item) => item.priceNew < 5000000));
     } else if (className.includes("medium")) {
       console.log(2);
       setFilter(
-        arrFill.filter((item) => item.price > 5000000 && item.price < 10000000)
+        arrFill.filter(
+          (item) => item.priceNew > 5000000 && item.priceNew < 10000000
+        )
       );
     } else {
       console.log(3);
-      setFilter(arrFill.filter((item) => item.price > 10000000));
+      setFilter(arrFill.filter((item) => item.priceNew > 10000000));
     }
   };
   onFilter(filter);

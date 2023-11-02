@@ -38,8 +38,8 @@ function App() {
       </Routes>
       <Footer />
       <ToastContainer />
-      <button id="scroll-top" className="" onClick={handleClickScrollIcon}>
-        <i class="fa-solid fa-chevron-up"></i>
+      <button id="scroll-top" onClick={handleClickScrollIcon}>
+        <i className="fa-solid fa-chevron-up"></i>
       </button>
     </>
   );

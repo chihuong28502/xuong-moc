@@ -54,7 +54,7 @@ function ListSearch() {
 
       <div className="row">
         {dataSearch.slice(0, 4).map((item) => (
-          <Product product={item} key={item.id} />
+          <Product iconProduct={'fa-regular fa-heart'} product={item} key={item.id} />
         ))}
         {/* {dataSearch.slice(0, 4).map((item) => (
           <div className="col-md-3" key={item.id}>

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BoxWishList from "./BoxWishList";
 import { context } from "../context/useContext";
@@ -20,13 +20,11 @@ function ProductsHeart() {
     //   });
   }, [responseData]);
   return (
-    <div
-      href="/#"
+    <Link
+      to={"/danh-sach-yeu-thich"}
       className="item-icon icon-heart  d-flex justify-content-center align-items-center position-relative"
     >
-      <Link to={"/danh-sach-yeu-thich"}>
-        <i className="fa-regular fa-heart" />
-      </Link>
+      <i className="fa-regular fa-heart" />
       <div className="box-heart">
         {local === null || (local !== null && local.length === 0) ? (
           // /products
@@ -54,7 +52,7 @@ function ProductsHeart() {
         )}
       </div>
       <div className="number-productWishlist">{local?.length}</div>
-    </div>
+    </Link>
   );
 }
 

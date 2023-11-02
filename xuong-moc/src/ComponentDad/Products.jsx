@@ -1,21 +1,34 @@
 import React, { useEffect, useState } from "react";
 import "../css/products-style.css";
 import Slider from "../components/Slider";
-import axios from "../api/apiXM";
-import listCategories from "../data/listCategoriesProducts";
+import axios from "../api/apiXMSwaggerUI";
 import slugify from "../format/formatText";
 import Product from "../componentChild/Product";
 import { Link } from "react-router-dom";
 function Products() {
   const [listProducts, setListProducts] = useState([]);
-  let iconProduct = 'fa-regular fa-heart';
+  const [listCategories, setListCategories] = useState([]);
+  let iconProduct = "fa-regular fa-heart";
   useEffect(() => {
     // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
     axios
-      .get("Products")
+      .get("products")
       .then((response) => {
         // Xử lý dữ liệu từ phản hồi
         setListProducts(response.data);
+      })
+      .catch((error) => {
+        // Xử lý lỗi (nếu có)
+        console.error(error);
+      });
+  }, []);
+  useEffect(() => {
+    // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
+    axios
+      .get("categories")
+      .then((response) => {
+        // Xử lý dữ liệu từ phản hồi
+        setListCategories(response.data);
       })
       .catch((error) => {
         // Xử lý lỗi (nếu có)
@@ -26,8 +39,8 @@ function Products() {
     return (
       <div className="all-product__item" key={index}>
         <div className="all-product__item--title">
-          <h4>{Object.values(item)}</h4>
-          <Link className="see-all" to={`/products/${slugify(item)}`}>
+          <h4>{item.title}</h4>
+          <Link className="see-all" to={item.slug}>
             Xem tất cả
           </Link>
         </div>
@@ -35,7 +48,7 @@ function Products() {
           {/* .filter((x) => x.category === Object.keys(item))
             . */}
           {listProducts
-            .filter((x) => x.category === item)
+            .filter((x) => x.cid === item.id)
             .slice(0, 4)
             .map((product) => (
               <Product

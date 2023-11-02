@@ -20,23 +20,10 @@ function ShowAllWishList() {
     };
     getData();
   }, []);
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get("wishlist")
-  //     .then((response) => {
-  //       // Xử lý dữ liệu từ phản hồi
-  //       setData(response.data);
-  //     })
-  //     .catch((error) => {
-  //       // Xử lý lỗi (nếu có)
-  //       console.error(error);
-  //     });
   // }, []);
   const [filters, setFilters] = useState();
   const handleFilter = (filter) => {
     setFilters(filter);
-    console.log(filter);
   };
   useEffect(() => {}, [numberLoad]);
   return (

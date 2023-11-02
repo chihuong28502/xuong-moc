@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import handleClickSearch from "../handleJs/search";
 import handleOnclickInputSearch from "../handleJs/handleOnclickInputSearch";
-import apiXM from "../api/apiXM";
+import apiXM from "../api/apiXMSwaggerUI";
 import { Link } from "react-router-dom";
 import { context } from "../context/useContext";
-import slugify from "slugify";
 import DataSearchUlLi from "./DataSearchUlLi";
+import slugifyText from "../format/formatText";
 function Search() {
   // handle design
 
@@ -13,15 +13,8 @@ function Search() {
   let { valueSearch, setValueSearch } = useContext(context);
   useEffect(() => {
     const getAllProductsSearch = async () => {
-      let respone = await apiXM.get("/products");
-      setproducts(
-        respone.data.filter((fil) =>
-          fil.product_name
-            .toLocaleLowerCase()
-            .trim()
-            .includes(valueSearch.toLocaleLowerCase().trim())
-        )
-      );
+      let res = await apiXM.get("/products");
+      setproducts(res.data);
     };
     getAllProductsSearch();
   }, [valueSearch]);
@@ -40,6 +33,17 @@ function Search() {
     // setDataSearch();
     setproducts(products);
   };
+
+  const [searchResult, setSearchResult] = useState([]);
+  useEffect(() => {
+    if (products.length != 0) {
+      setSearchResult(
+        products.filter((fil) =>
+          slugifyText(fil.title).includes(slugifyText(valueSearch))
+        )
+      );
+    }
+  }, [valueSearch]);
   return (
     <>
       <>
@@ -62,7 +66,7 @@ function Search() {
             Bạn cần tìm sản phẩm gì?
           </label>
           <Link
-            to={`/search/${slugify(valueSearch)}`}
+            to={`/search/${slugifyText(valueSearch)}`}
             className="search-form__search"
             onClick={handleOnclickIconSearch}
           >
@@ -73,7 +77,7 @@ function Search() {
       {valueSearch === "" ? (
         ""
       ) : (
-        <DataSearchUlLi valueSearch={valueSearch} product={products} />
+        <DataSearchUlLi valueSearch={valueSearch} product={searchResult} />
       )}
     </>
   );

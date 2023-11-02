@@ -12,11 +12,11 @@ function BoxWishList({ wishlist }) {
           <div className="box__content--data">
             <div className="details">
               <img
-                src={`http://cutuananh.devmaster.vn/${wishlist.image}`}
+                src={`http://apixm.devmaster.vn/${wishlist.image}`}
                 alt=""
               />
               <div>
-                <h5>{wishlist.product_name}</h5>
+                <h5>{wishlist.title}</h5>
                 <h5>
                   &nbsp;
                   <i className="fa-solid fa-star" />
@@ -28,7 +28,7 @@ function BoxWishList({ wishlist }) {
                 {Intl.NumberFormat("it-IT", {
                   style: "currency",
                   currency: "VND",
-                }).format(wishlist.price)}
+                }).format(wishlist.priceNew)}
               </span>
             </h5>
           </div>

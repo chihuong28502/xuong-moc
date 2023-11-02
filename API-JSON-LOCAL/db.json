@@ -884,109 +884,220 @@
   ],
   "wishlist": [
     {
-      "product_name": "SOFA",
-      "price": 8400000,
-      "size": [
-        "Dài 2.4 x Rộng 1.6 x Cao 0.8m"
-      ],
-      "category": "Phòng khách",
-      "old_price": 10000000,
-      "material": [
-        {
-          "name": "Bọc vải nỉ",
-          "quantity": 50
-        }
-      ],
-      "image": [
-        "images/products/phong-khach/011.jpg"
-      ],
-      "details": {
-        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại sofa văng sofa góc, sofa giá rẻ, sofa hiện đại.",
-        "des2": "- Thông số ...",
-        "des3": "- Bảo quản ...",
-        "des4": "- Bảo hành 1 năm ...",
-        "des5": "- Cam kết ..."
-      },
-      "rating": 5,
-      "img_slide": [
-        "images/products/phong-khach/011.jpg"
-      ],
-      "color": "Vàng cam",
-      "id": "11"
+      "id": 12,
+      "cid": 7,
+      "code": "P006",
+      "title": "Bàn uống nước 2",
+      "description": "<p>B&agrave;n uống nước 2</p>\n",
+      "content": "<p>B&agrave;n uống nước 2</p>\n",
+      "image": "/Images/products/phong-khach/015.jpg",
+      "metaTitle": "BÀN UỐNG NƯỚC 2",
+      "metaKeyword": "Bàn uống nước 2",
+      "metaDescription": "Bàn uống nước 2\n",
+      "slug": "ban-uong-nuoc-2",
+      "priceOld": 3999000,
+      "priceNew": 3999000,
+      "size": "Size vừa",
+      "views": 0,
+      "likes": 0,
+      "star": null,
+      "home": null,
+      "hot": 1,
+      "createdDate": "2020-07-31T00:00:00",
+      "updatedDate": "2020-07-31T00:49:13.867",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": null
     },
     {
-      "product_name": "Kệ đồ",
-      "price": 4990000,
-      "size": [
-        "Rộng 0.4 x Cao 0.5 x Dài 1.6m"
-      ],
-      "category": "Phòng khách",
-      "old_price": 6000000,
-      "material": [
-        {
-          "name": "Gỗ lim",
-          "quantity": 0
-        },
-        {
-          "name": "Gỗ sồi",
-          "quantity": 0
-        }
-      ],
-      "image": [
-        "images/products/phong-khach/008.jpg"
-      ],
-      "details": {
-        "des1": "- Kệ để đồ trang trí với màu sắc sang trọng được làm từ loại gỗ nhập khẩu cao cấp, đảm bảo chắc chắn và bền đẹp. Loại kệ này rất thích hợp dùng cho văn phòng và gia đình để trưng bày đồ trang trí và sách.",
-        "des2": "- Thông số ...",
-        "des3": "- Bảo quản ...",
-        "des4": "- Bảo hành 1 năm ...",
-        "des5": "- Cam kết ..."
-      },
-      "rating": 4,
-      "img_slide": [
-        "images/products/phong-khach/008.jpg"
-      ],
-      "color": "Nâu vân gỗ",
-      "id": "8"
+      "id": 13,
+      "cid": 7,
+      "code": "P007",
+      "title": "Kệ để đồ",
+      "description": "<p>Kệ để đồ</p>\n",
+      "content": "<p>Kệ để đồ</p>\n",
+      "image": "/Images/products/phong-khach/008.jpg",
+      "metaTitle": "Kệ để đồ",
+      "metaKeyword": "Kệ để đồ",
+      "metaDescription": "Kệ để đồ\n",
+      "slug": "ke-de-do",
+      "priceOld": 15999000,
+      "priceNew": 12999000,
+      "size": "4 ngăn",
+      "views": 0,
+      "likes": 0,
+      "star": null,
+      "home": null,
+      "hot": 1,
+      "createdDate": "2020-07-31T00:00:00",
+      "updatedDate": "2020-07-31T00:50:56.44",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": null
     },
     {
-      "product_name": "Kệ TV",
-      "price": 4560000,
-      "size": [
-        "Cao 0.5 x Rộng 0.4 x Dài 2m"
-      ],
-      "category": "Phòng khách",
-      "old_price": 5200000,
-      "material": [
-        {
-          "name": "Gỗ sồi",
-          "quantity": 50
-        },
-        {
-          "name": "Gỗ lim",
-          "quantity": 0
-        },
-        {
-          "name": "Gỗ tràm",
-          "quantity": 50
-        }
-      ],
-      "image": [
-        "images/products/phong-khach/002.jpg"
-      ],
-      "details": {
-        "des1": "- Nội thất Hoàng Hoan là đơn vị chuyên cung cấp và sản xuất tất cả các loại kệ tivi giá rẻ, kệ tivi hiện đại. ",
-        "des2": "- Thông số ...",
-        "des3": "- Bảo quản ...",
-        "des4": "- Bảo hành 1 năm ...",
-        "des5": "- Cam kết ..."
-      },
-      "rating": 4,
-      "img_slide": [
-        "images/products/phong-khach/002.jpg"
-      ],
-      "color": "Nâu vân gỗ",
-      "id": "2"
+      "id": 18,
+      "cid": 8,
+      "code": "P011",
+      "title": "Kệ đầu giường",
+      "description": "<p>Kệ đầu giường</p>\n",
+      "content": "<p>Kệ đầu giường</p>\n",
+      "image": "/Images/products/phong-ngu/004.jpg",
+      "metaTitle": "Kệ đầu giường",
+      "metaKeyword": "Kệ đầu giường",
+      "metaDescription": "Kệ đầu giường\n",
+      "slug": "ke-dau-giuong",
+      "priceOld": 20899000,
+      "priceNew": 18899000,
+      "size": "2 ngăn",
+      "views": 0,
+      "likes": 0,
+      "star": null,
+      "home": null,
+      "hot": 1,
+      "createdDate": "2020-07-31T00:00:00",
+      "updatedDate": "2020-07-31T01:16:27.333",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": null
+    },
+    {
+      "id": 17,
+      "cid": 8,
+      "code": "P010",
+      "title": "Giường gỗ",
+      "description": "<p>Giường gỗ</p>\n",
+      "content": "<p>Giường gỗ</p>\n",
+      "image": "/Images/products/phong-ngu/003.jpg",
+      "metaTitle": "Giường gỗ",
+      "metaKeyword": "Giường gỗ",
+      "metaDescription": "Giường gỗ\n",
+      "slug": "giuong-go",
+      "priceOld": 20999000,
+      "priceNew": 18999000,
+      "size": "Size vừa",
+      "views": 0,
+      "likes": 0,
+      "star": null,
+      "home": null,
+      "hot": 1,
+      "createdDate": "2020-07-31T00:00:00",
+      "updatedDate": "2020-07-31T01:15:39.39",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": null
+    },
+    {
+      "id": 15,
+      "cid": 8,
+      "code": "P009",
+      "title": "Tủ quần áo",
+      "description": "<p>Tủ quần &aacute;o</p>\n",
+      "content": "<p>Tủ quần &aacute;o</p>\n",
+      "image": "/Images/products/phong-ngu/007.jpg",
+      "metaTitle": "Tủ quần áo",
+      "metaKeyword": "Tủ quần áo",
+      "metaDescription": "Tủ quần áo\n",
+      "slug": "tu-quan-ao",
+      "priceOld": 15999000,
+      "priceNew": 12999000,
+      "size": "4 ngăn, trắng, gỗ",
+      "views": 0,
+      "likes": 0,
+      "star": null,
+      "home": null,
+      "hot": 1,
+      "createdDate": "2020-07-31T00:55:32.307",
+      "updatedDate": "2020-07-31T00:55:32.307",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": null
+    },
+    {
+      "id": 25,
+      "cid": 11,
+      "code": "P018",
+      "title": "Bồn rửa 2",
+      "description": "Bồn rửa 2",
+      "content": "Bồn rửa 2",
+      "image": "/Images/products/phong-tam/008.jpg",
+      "metaTitle": "Bồn rửa 2",
+      "metaKeyword": "Bồn rửa 2",
+      "metaDescription": "Bồn rửa 2",
+      "slug": "bon-rua-2-p018",
+      "priceOld": 4000000,
+      "priceNew": 3300000,
+      "size": null,
+      "views": null,
+      "likes": null,
+      "star": null,
+      "home": 0,
+      "hot": null,
+      "createdDate": "2023-09-30T16:46:59.757",
+      "updatedDate": "2023-09-30T16:46:59.757",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": false
+    },
+    {
+      "id": 23,
+      "cid": 11,
+      "code": "P016",
+      "title": "Bồn rừa tay",
+      "description": "Bồn rừa tay",
+      "content": "Bồn rừa tay",
+      "image": "/Images/products/phong-tam/006.jpg",
+      "metaTitle": "Bồn rừa tay",
+      "metaKeyword": "Bồn rừa tay",
+      "metaDescription": "Bồn rừa tay",
+      "slug": "bon-rua-tay",
+      "priceOld": 3950000,
+      "priceNew": 3900000,
+      "size": null,
+      "views": null,
+      "likes": null,
+      "star": null,
+      "home": 0,
+      "hot": null,
+      "createdDate": "2023-09-30T16:44:40.917",
+      "updatedDate": "2023-09-30T16:44:40.917",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": false
+    },
+    {
+      "id": 22,
+      "cid": 11,
+      "code": "P015",
+      "title": "Bồn rửa mặt",
+      "description": "Bồn rửa mặt",
+      "content": "Bồn rửa mặt",
+      "image": "/Images/products/phong-tam/005.jpg",
+      "metaTitle": "Bồn rửa mặt",
+      "metaKeyword": "Bồn rửa mặt",
+      "metaDescription": "Bồn rửa mặt",
+      "slug": null,
+      "priceOld": 8500000,
+      "priceNew": 8000000,
+      "size": null,
+      "views": null,
+      "likes": null,
+      "star": null,
+      "home": 0,
+      "hot": null,
+      "createdDate": "2023-09-30T16:43:15.333",
+      "updatedDate": "2023-09-30T16:43:15.333",
+      "adminCreated": "4",
+      "adminUpdated": "4",
+      "status": 1,
+      "isdelete": false
     }
   ]
 }

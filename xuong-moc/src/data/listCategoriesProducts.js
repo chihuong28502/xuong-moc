@@ -1,8 +1,8 @@
 const listCategories = [
-  "Phòng tắm",
   "Phòng khách",
   "Phòng bếp",
   "Phòng ngủ",
+  "Phòng tắm",
   "Trẻ em",
   "Văn phòng",
   "Cầu thang",

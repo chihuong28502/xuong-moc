@@ -33,7 +33,7 @@ const listRouter = [
     path: "/introduce",
     component: Introduce,
   },
-  { path: "/products/:productCategory", component: AllProducts },
+  { path: "/products/:slug", component: AllProducts },
   { path: "/search/:valueSearch", component: ListSearch },
   { path: "/danh-sach-yeu-thich", component: ShowAllWishList },
 ];

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/products-allproducts.css";
 import slugifyText from "../format/formatText";
-import listCategories from "../data/listCategoriesProducts";
-import axios from "../api/apiXM";
+import axios from "../api/apiXMSwaggerUI";
 import { useParams } from "react-router-dom";
 import slugify from "slugify";
 import Product from "../componentChild/Product";
@@ -11,15 +10,26 @@ function AllProducts() {
   let iconProduct = "fa-regular fa-heart";
   let [numberLoad, setNumberLoad] = useState(4);
   const [product, setProduct] = useState([]);
-
+  const { slug } = useParams();
+  const [listCategories, setListCategories] = useState([]);
   const [sort, setSort] = useState("");
+  useEffect(() => {
+    const getCategories = async () => {
+      let res = await axios.get("categories");
+      setListCategories(res.data);
+    };
+    getCategories();
+  }, []);
 
-  const { productCategory } = useParams();
   useEffect(() => {
     const getProduct = async () => {
       let res = await axios.get("products");
       setProduct(
-        res.data.filter((x) => slugifyText(x.category) === productCategory)
+        listCategories.map((category) => {
+          if (category.slug === slug) {
+            res.data.filter((x) => x.cid === category.id);
+          }
+        })
       );
     };
     getProduct();
@@ -31,11 +41,10 @@ function AllProducts() {
   };
   const handleShowAllProducts = () => {
     setNumberLoad(numberLoad + 4);
-    console.log(numberLoad);
   };
   useEffect(() => {}, [numberLoad]);
   return (
-    <div className="box-content all-product">
+    <div className="box-content all-product ">
       {/* <div id="demo" className="carousel slide" data-ride="carousel">
         <ul className="carousel-indicators">
           <li data-target="#demo" data-slide-to={0} className="active" />
@@ -63,10 +72,10 @@ function AllProducts() {
           product={product}
         />
         {listCategories.map((item, index) => {
-          if (slugify(item).toLowerCase() === productCategory) {
+          if (item.slug === slug) {
             return (
               <div className="all-product__item--title" key={index}>
-                <h4>{item}</h4>
+                <h4>{item.title}</h4>
               </div>
             );
           }
@@ -75,22 +84,22 @@ function AllProducts() {
           {filters === undefined
             ? product
                 .slice(0, numberLoad)
-                .map((item) => (
+                .map((item, index) => (
                   <Product
                     iconProduct={iconProduct}
                     filters={filters}
                     product={item}
-                    key={item.id}
+                    key={index}
                   />
                 ))
             : filters
                 .slice(0, numberLoad)
-                .map((item) => (
+                .map((item, index) => (
                   <Product
                     iconProduct={iconProduct}
                     filters={filters}
                     product={item}
-                    key={item.id}
+                    key={index}
                   />
                 ))}
         </div>

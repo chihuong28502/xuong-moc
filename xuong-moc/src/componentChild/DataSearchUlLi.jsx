@@ -14,7 +14,7 @@ function DataSearchUlLi({ product, valueSearch }) {
         <a href="/san-pham/phong-tam/bon-rua-mat" key={index}>
           <div className="data-search__item">
             <img src={`http://apixm.devmaster.vn/${item.image}`} alt="" />
-            <p>{item.product_name}</p>
+            <p>{item.title}</p>
             <i className="fa-solid fa-angle-right" />
           </div>
         </a>
