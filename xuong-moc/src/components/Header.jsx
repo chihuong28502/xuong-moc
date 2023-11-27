@@ -3,6 +3,7 @@ import ProductsCart from "../componentChild/ProductsCart";
 import Search from "../componentChild/Search";
 import logo from "../pictures/logo.png";
 import Navigate from "../componentChild/Navigate";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header container-fluid w-100 d-flex m-auto position-fixed">
@@ -17,6 +18,12 @@ function Header() {
           <ProductsCart />
           <ProductsHeart />
           <Search />
+          <Link
+            className="item-icon icon-cart "
+            to={`/Admin`}
+          >
+            <i class="fa-brands fa-mailchimp"></i>
+          </Link>
         </div>
       </div>
     </div>

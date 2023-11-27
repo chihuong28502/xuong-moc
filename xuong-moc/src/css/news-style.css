@@ -42,9 +42,10 @@
   margin-bottom: 3.2rem;
 }
 .box-news h4 {
-  color: #bd945f;
+  color: #000;
   font-size: 1.6rem;
   margin-bottom: 3.2rem;
+  font-weight: 500;
 }
 .box-news h4:after {
   transform: none;
@@ -66,6 +67,6 @@
 }
 .box-news .content-left__title {
   color: #bd945f;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }

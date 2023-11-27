@@ -35,15 +35,15 @@ img {
 }
 .home-news .main-content {
   background-color: #bd945f;
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: absolute;
   bottom: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   text-align: justify;
 }
 .home-news .main-content p:first-child {
   margin-bottom: 0.8rem;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 2;
 }
@@ -54,7 +54,7 @@ img {
   color: #000;
 }
 .home-news .title a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #bd945f;
 }

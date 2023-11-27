@@ -1,37 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "../css/products-style.css";
-import Slider from "../components/Slider";
 import axios from "../api/apiXMSwaggerUI";
-import slugify from "../format/formatText";
 import Product from "../componentChild/Product";
 import { Link } from "react-router-dom";
+import { context } from "../context/useContext";
+import BannerComp from "../components/BannerComp";
 function Products() {
-  const [listProducts, setListProducts] = useState([]);
-  const [listCategories, setListCategories] = useState([]);
+  const { listProducts, setListProducts, listCategories, setListCategories } =
+    useContext(context);
   let iconProduct = "fa-regular fa-heart";
   useEffect(() => {
-    // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
     axios
       .get("products")
       .then((response) => {
-        // Xử lý dữ liệu từ phản hồi
         setListProducts(response.data);
       })
       .catch((error) => {
-        // Xử lý lỗi (nếu có)
         console.error(error);
       });
   }, []);
   useEffect(() => {
-    // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
     axios
       .get("categories")
       .then((response) => {
-        // Xử lý dữ liệu từ phản hồi
         setListCategories(response.data);
       })
       .catch((error) => {
-        // Xử lý lỗi (nếu có)
         console.error(error);
       });
   }, []);
@@ -45,8 +39,6 @@ function Products() {
           </Link>
         </div>
         <div className="row">
-          {/* .filter((x) => x.category === Object.keys(item))
-            . */}
           {listProducts
             .filter((x) => x.cid === item.id)
             .slice(0, 4)
@@ -63,7 +55,7 @@ function Products() {
   });
   return (
     <>
-      <Slider />
+      <BannerComp />
       <div className="wrap-all-products">
         <div className="box-content all-product container">
           {elementAllproducts}

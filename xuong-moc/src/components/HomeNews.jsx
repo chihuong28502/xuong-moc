@@ -1,43 +1,35 @@
 import React, { useEffect, useState } from "react";
-import axios from "../api/apiXM";
+import axios from "../api/apiXMSwaggerUI";
 import { Link } from "react-router-dom";
 import slugify from "../format/formatText";
 function HomeNews() {
   const [news, setNews] = useState([]);
   useEffect(() => {
-    const getAllProducts = async () => {
+    const getAllListNews = async () => {
       let respone = await axios.get("News");
       setNews(respone.data);
     };
-    getAllProducts();
+    getAllListNews();
   }, []);
-
-  useEffect(() => {}, [news]);
-  var newData = [...news];
 
   return (
     <section id="home-news">
-      {newData.length !== 0 && (
+      {news.length !== 0 && (
         <div className="home-news container">
           <h4>tin tức</h4>
           <div className="row ">
             <div className="col-md-7 home-news__effect">
-              <Link to={`http://cutuananh.devmaster.vn/${news[0].title}`}>
+              <Link to={`/news/${slugify(news[0].title)}`}>
                 <div className="thumbnail box">
                   <div className="img img-main">
                     <img
-                      src="http://cutuananh.devmaster.vn/images/AnhCatTC/ve-chung-toi/ve-chung-toi.jpg"
+                      src={`http://apixm.devmaster.vn/${news[0].image}`}
                       alt=""
                     />
                   </div>
                   <div className="main-content">
-                    <p>Cách chọn Sofa cho phòng khách thêm sang trọng</p>
-                    <p>
-                      Không phải ai trong chúng ta cũng biết cách chọn màu sofa
-                      cho phòng khách trở nên sang trọng và đẹp mắt hơn. Tuy
-                      nhiên, đây là yếu tố quyết định phần lớn đến tính thẩm mỹ
-                      của toàn bộ ngôi nhà.
-                    </p>
+                    <p>{news[0].title}</p>
+                    <p>{news[0].description}</p>
                   </div>
                 </div>
               </Link>
@@ -46,34 +38,34 @@ function HomeNews() {
               <div className="thumbnail">
                 <div className="home-news__effect">
                   {news.splice(0, 3).map((item, index) => (
-                    <div className="row fix-height" key={index}>
+                    <Link
+                      to={`/news/${slugify(item.title)}`}
+                      className="row fix-height"
+                      key={index}
+                    >
                       <div className="col-md-5 box">
                         <div className="img img-list">
-                          <Link to={`/news/${slugify(item.title)}`}>
-                            <img
-                              className="home-new-img-item"
-                              src={`http://cutuananh.devmaster.vn/${item.image}`}
-                              alt="tin tức"
-                            />
-                          </Link>
+                          <img
+                            className="home-new-img-item"
+                            src={`http://apixm.devmaster.vn/${item.image}`}
+                            alt="tin tức"
+                          />
                         </div>
                       </div>
                       <div className="col-md-7">
                         <p className="title">
-                          <a href="/tin-tuc/top-10-mau-noi-that-chung-cu-1-phong-ngu">
-                            {item.title}
-                          </a>
+                          <a href="/#">{item.title}</a>
                         </p>
                         <p className="desc">{item.content}</p>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
                 <div className="readMore">
-                  <a href="/tat-ca-tin-tuc">
+                  <Link to={`News`}>
                     Xem thêm
                     <i className="fa-solid fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,12 +1,11 @@
 import { createContext, useState } from "react";
-import dataNavList from "../data/navigateHeader";
 export const context = createContext();
 
 const ContextProvider = ({ children }) => {
-  //State
-  const urlBaseImage = "http://apixm.devmaster.vn/";
-  const [navList, setNavList] = useState(dataNavList);
+  const [listProducts, setListProducts] = useState([]);
+  const [listCategories, setListCategories] = useState([]);
   const [slider, setSLider] = useState([]);
+  const [productSelect, setProductSelect] = useState({});
   const [dataSearch, setDataSearch] = useState([]);
   const [responseData, setResponseData] = useState([]);
   const [valueSearch, setValueSearch] = useState("");
@@ -26,13 +25,17 @@ const ContextProvider = ({ children }) => {
   // }
   //Value
   const value = {
-    navList,
     responseData,
+    productSelect,
+    setProductSelect,
     setResponseData,
     local,
+    listCategories,
+    setListCategories,
+    listProducts,
+    setListProducts,
     setLocal,
     slider,
-    urlBaseImage,
     setSLider,
     dataSearch,
     setDataSearch,

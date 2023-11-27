@@ -23,20 +23,12 @@ function Search() {
     setValueSearch(value);
   };
   const handleOnclickIconSearch = () => {
-    // setDataSearch(products);
-    // dataSearch = products.filter((fil) =>
-    //   fil.product_name
-    //     .toLocaleLowerCase()
-    //     .trim()
-    //     .includes(valueSearch.toLocaleLowerCase().trim())
-    // );
-    // setDataSearch();
     setproducts(products);
   };
 
   const [searchResult, setSearchResult] = useState([]);
   useEffect(() => {
-    if (products.length != 0) {
+    if (products.length !== 0) {
       setSearchResult(
         products.filter((fil) =>
           slugifyText(fil.title).includes(slugifyText(valueSearch))

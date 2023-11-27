@@ -7,17 +7,6 @@ function ProductsHeart() {
   const { local, setLocal } = useContext(context);
   useEffect(() => {
     setLocal(JSON.parse(localStorage.getItem("wishlistItems")));
-    // // Thực hiện yêu cầu GET đến một API hoặc tài nguyên khác
-    // axios
-    //   .get("wishlist")
-    //   .then((response) => {
-    //     // Xử lý dữ liệu từ phản hồi
-    //     // setWishList(response.data);
-    //   })
-    //   .catch((error) => {
-    //     // Xử lý lỗi (nếu có)
-    //     console.error(error);
-    //   });
   }, [responseData]);
   return (
     <Link

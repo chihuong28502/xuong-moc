@@ -1,35 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../css/introduce.css";
-import apiXM from "../api/apiXM";
+import missionData from "../data/dataMission";
+import BannerComp from "../components/BannerComp";
 function Introduce() {
-  const [mission, setMission] = useState([]);
-  useEffect(() => {
-    const getAllMission = async () => {
-      let respone = await apiXM.get("/mission");
-      setMission(respone.data);
-    };
-    getAllMission();
-  }, []);
-  useEffect(() => {}, [mission]);
+  const mission = missionData;
+
   return (
     <div className="box-content">
-      <div className="container">
-        <div className="banner-page">
-          <div className="banner-page__image">
-            <img
-              src="http://cutuananh.devmaster.vn/images/AnhCatTC/thanhlap.jpg"
-              alt=""
-            />
-          </div>
-          <div className="banner-page__title">
-            <img
-              src="http://cutuananh.devmaster.vn/images/AnhCatTC/thanhlap.jpg"
-              alt=""
-            />
-            <p>GIỚI THIỆU</p>
-          </div>
-        </div>
-        <div className="wrapper-box  box-about">
+      <div className="container-fluit">
+        <BannerComp />
+        <div className="wrapper-box  box-about container">
           <h4>thành lập &amp; phát triển</h4>
           <div className="row about-history mt-3">
             <div className="col-md-6">

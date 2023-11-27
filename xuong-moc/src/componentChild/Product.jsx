@@ -1,12 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { context } from "../context/useContext";
+// import axios from "../api/xm";
 import axios from "../api/apiXM";
+import { Link } from "react-router-dom";
+import slugifyText from "../format/formatText";
 
 function Product(props) {
   const { product, iconProduct } = props;
   const [postData, setPostData] = useState({});
-  const { responseData, setResponseData } = useContext(context);
+  const { responseData, setResponseData, setProductSelect } =
+    useContext(context);
   const postOrDeleteDataToAPI = async (product) => {
     if (iconProduct == "fa-regular fa-heart") {
       try {
@@ -18,19 +22,17 @@ function Product(props) {
       } catch (error) {
         // Xử lý lỗi POST
         toast.error("Sản phẩm đã tồn tại trong danh mục yêu thích");
-      } 
+      }
     } else {
       axios
         .delete(`/wishlist/${product.id}`)
         .then((response) => {
           toast.success("Xóa thành công");
           localStorage.removeItem("wishlistItems", product);
-          // Cập nhật danh sách đối tượng sau khi xóa
           const updatedObjects = responseData.filter(
             (obj) => obj.id !== product.id
           );
           setResponseData(updatedObjects);
-          // Đặt giá trị deletedObjectId để thông báo xóa thành công (nếu cần)
         })
         .catch((error) => {
           toast.error("Xóa khong thành công:");
@@ -52,13 +54,16 @@ function Product(props) {
     } finally {
     }
   };
-  
 
   useEffect(() => {
     if (postData) {
       fetchDataFromAPI();
     }
   }, [postData]);
+
+  const handleClickDetail = () => {
+    setProductSelect(product);
+  };
   localStorage.setItem("wishlistItems", JSON.stringify(responseData));
   return (
     <div className="col-md-3">
@@ -283,11 +288,15 @@ function Product(props) {
           </span>
         </div>
         <div className="product-card__group-btn">
-          <a href="/san-pham/phong-khach/ban-uong-nuoc">
+          <Link
+            onClick={handleClickDetail}
+            className="see-all"
+            to={`/products/product/${slugifyText(product.title)}`}
+          >
             <button className="btn">
               <i className="fa-solid fa-magnifying-glass" />
             </button>
-          </a>
+          </Link>
           <button
             onClick={() => handleClickAddWishList(product)}
             className="btn"

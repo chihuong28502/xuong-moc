@@ -232,6 +232,7 @@ h4:after {
 }
 .slider-content span {
   color: #bd945f;
+  font-size: 4rem!important;
 }
 .slider-content h1 {
   font-weight: 700;
@@ -264,7 +265,7 @@ h4:after {
 #scroll-top {
   position: fixed;
   top: -120%;
-  right: 5.5rem ;
+  right: 5.5rem;
   border: 0.25rem solid #fff;
   background: #bd945f;
   color: #fff;
@@ -273,4 +274,18 @@ h4:after {
   z-index: 1000;
   width: 4rem;
   height: 4rem;
+}
+/* control */
+select.form-control.px-3.py-2 {
+  font-size: 1.4rem;
+}
+.control-form {
+  display: flex;
+  align-items: center;
+}
+.filter-item {
+  font-size: 1.4rem;
+}
+.carousel-edit img{
+  height: 40rem;
 }

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { context } from "../context/useContext";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import dataNavList from "../data/navigateHeader";
 
 function Navigate() {
-  const { navList } = useContext(context);
-  
+  const navList = dataNavList;
+
   const activeClassName = ({ isActive }) => {
     return isActive ? "nav-item active" : "nav-item";
   };

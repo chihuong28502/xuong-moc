@@ -1,24 +1,10 @@
-import React, { useEffect, useState } from "react";
-import axios from "../api/apiXM";
+import React from "react";
+import dataAboutUs from "../data/dataAboutUs";
+import dataPolicy from "../data/dataPolicy";
 function HomeAboutUs() {
-  const [policies, setPolicies] = useState([]);
-  const [dataAboutUs, setdataAboutUs] = useState([]);
-  useEffect(() => {
-    const getAllProducts = async () => {
-      let respone = await axios.get("policies");
-      setPolicies(respone.data);
-    };
-    getAllProducts();
-  }, []);
-  useEffect(() => {
-    const getDataAboutUs = async () => {
-      let respone = await axios.get("dataAboutUs");
-      setdataAboutUs(respone.data);
-    };
-    getDataAboutUs();
-  }, []);
-  useEffect(() => {}, [policies]);
-  useEffect(() => {}, [dataAboutUs]);
+  const policies = dataPolicy;
+  const aboutUs = dataAboutUs;
+
   return (
     <section id="home-aboutUs">
       <div className="home-aboutUs__content container">
@@ -51,7 +37,7 @@ function HomeAboutUs() {
             </p>
             <div className="list-img">
               <ul className="d-flex row justify-content-between align-items-center">
-                {dataAboutUs.map((item) => {
+                {aboutUs.map((item) => {
                   return (
                     <li className="col-md-3" key={item.id}>
                       <div className="box position-relative">
@@ -83,7 +69,7 @@ function HomeAboutUs() {
         <div className="row">
           {policies.map((item, index) => {
             return (
-              <div className="col-md-6">
+              <div className="col-md-6" key={index}>
                 <div className="aboutUs-policy__item d-flex">
                   <div className="img">
                     <img

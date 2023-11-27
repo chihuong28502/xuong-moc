@@ -8,7 +8,6 @@ function Control({ onFilter, product, sort, setSort }) {
       if (arr[0] === "price") {
         if (arr[1] === "ASC") {
           product.sort((x, y) => {
-            console.log(1);
             return y.priceNew - x.priceNew;
           });
         } else {
@@ -31,25 +30,22 @@ function Control({ onFilter, product, sort, setSort }) {
     let arrFill = product;
     let className = e.target.className;
     if (className.includes("min")) {
-      console.log(1);
       setFilter(arrFill.filter((item) => item.priceNew < 5000000));
     } else if (className.includes("medium")) {
-      console.log(2);
       setFilter(
         arrFill.filter(
           (item) => item.priceNew > 5000000 && item.priceNew < 10000000
         )
       );
     } else {
-      console.log(3);
       setFilter(arrFill.filter((item) => item.priceNew > 10000000));
     }
   };
   onFilter(filter);
 
   return (
-    <div className="box-control">
-      <div className="dropdown">
+    <div className="box-control control-form">
+      <div className="dropdown ">
         <select
           value={sort}
           onChange={handleSort}

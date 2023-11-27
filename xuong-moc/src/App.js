@@ -29,12 +29,6 @@ function App() {
             />
           );
         })}
-        {/* <Route path="/Products" element={<Products />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
-        <Route path="/News" element={<News />}></Route>
-        {/* components child */}
-        {/* <Route path="/ProductItem" element={<ProductItem />}></Route> */}{" "}
-        {/* */}
       </Routes>
       <Footer />
       <ToastContainer />

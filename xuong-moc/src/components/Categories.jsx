@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "../api/apiXMSwaggerUI";
 import { Link } from "react-router-dom";
 import slugify from "slugify";
-// http://cutuananh.devmaster.vn/images/AnhCatTC/loai/
 function Categories() {
   const [categories, setCategories] = useState([]);
   useEffect(() => {

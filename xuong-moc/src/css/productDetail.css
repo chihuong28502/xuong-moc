@@ -1,0 +1,63 @@
+.productDetail {
+  margin-top: 10rem;
+}
+#price-old {
+  text-decoration: line-through;
+}
+.btn-chat-lieu:hover {
+  border: 3px solid #f27e7e;
+}
+.btn-chat-lieu {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 3px 20px;
+  border-radius: 0;
+  border: 3px solid #0c0c0c;
+}
+.chat-lieu {
+  font-size: 1.6rem;
+}
+#price-old {
+  font-size: 1.4rem;
+}
+#price-new {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #f27e7e;
+}
+#bao-hanh span {
+  display: block;
+}
+#bao-hanh {
+  padding: 2px;
+  border: 2px solid #f27e7e;
+  display: flex;
+  align-items: center;
+}
+.baoHanhIcon {
+  color: #f27e7e;
+  font-size: 2rem;
+}
+.baoHanhText {
+  font-size: 1.6rem;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #f27e7e !important;
+}
+.main-product-bottom button {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+.tab-content li {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.sp-miror {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.product-detail h2{
+  font-size: 3rem;
+}

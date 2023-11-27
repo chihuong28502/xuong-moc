@@ -3,7 +3,6 @@ import "../css/products-allproducts.css";
 import slugifyText from "../format/formatText";
 import axios from "../api/apiXMSwaggerUI";
 import { useParams } from "react-router-dom";
-import slugify from "slugify";
 import Product from "../componentChild/Product";
 import Control from "../componentChild/Control";
 function AllProducts() {
@@ -24,19 +23,20 @@ function AllProducts() {
   useEffect(() => {
     const getProduct = async () => {
       let res = await axios.get("products");
-      setProduct(
-        listCategories.map((category) => {
-          if (category.slug === slug) {
-            res.data.filter((x) => x.cid === category.id);
-          }
-        })
-      );
+      listCategories.map((cate) => {
+        if (
+          slugifyText(cate.title) === slugifyText(slug) &&
+          res.data.length !== 0
+        ) {
+          setProduct(res.data.filter((pro) => pro.cid === cate.id));
+        } else {
+        }
+      });
     };
     getProduct();
-  }, []);
+  }, [listCategories]);
   const [filters, setFilter] = useState();
   const handleFilter = (filter) => {
-    console.log(filter);
     setFilter(filter);
   };
   const handleShowAllProducts = () => {
@@ -45,7 +45,7 @@ function AllProducts() {
   useEffect(() => {}, [numberLoad]);
   return (
     <div className="box-content all-product ">
-      {/* <div id="demo" className="carousel slide" data-ride="carousel">
+      <div id="demo" className="slide" data-ride="carousel">
         <ul className="carousel-indicators">
           <li data-target="#demo" data-slide-to={0} className="active" />
           <li data-target="#demo" data-slide-to={1} />
@@ -55,15 +55,10 @@ function AllProducts() {
             <img
               src="http://cutuananh.devmaster.vn/images/AnhCatTC/trai-nghiem1.jpg"
               alt=""
-              width={1100}
-              height={500}
             />
-            <div className="carousel-btn">
-              <button className="btn-buy">Mua ngay</button>
-            </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="all-product__item container">
         <Control
           onFilter={handleFilter}

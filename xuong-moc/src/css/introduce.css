@@ -49,3 +49,7 @@
 .wrapper-box .about-history p {
   text-align: justify;
 }
+p.desc{
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}

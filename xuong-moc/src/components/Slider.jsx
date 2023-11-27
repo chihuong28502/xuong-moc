@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
-import axios from "../api/apiXM";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import dataBanner from "../data/dataBanner";
 function Slider() {
-  const [slider, setSlider] = useState({});
-  useEffect(() => {
-    const getDataSlider = async () => {
-      let respone = await axios.get("data-banner-home");
-      setSlider(respone.data);
-    };
-    getDataSlider();
-  }, []);
-  useEffect(() => {}, [slider]);
+  const slider = dataBanner;
   return (
     <div className="slider position-relative">
       <div className="slider-img container-fluid gx-0">
@@ -23,7 +15,7 @@ function Slider() {
           <span>{slider.subTitle}</span>
         </h1>
         <p>{slider.description}</p>
-        <NavLink to={slider.link}>
+        <NavLink to={`/contact`}>
           <button className="" type="submit">
             LIÊN HỆ NGAY
           </button>

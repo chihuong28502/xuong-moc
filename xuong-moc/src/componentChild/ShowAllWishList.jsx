@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { context } from "../context/useContext";
 import Product from "./Product";
+// import axios from "../api/xm";
 import axios from "../api/apiXM";
+
 import Control from "./Control";
 
 function ShowAllWishList() {
@@ -11,7 +13,6 @@ function ShowAllWishList() {
   const [sort, setSort] = useState("");
   const handleShowAllProducts = () => {
     setNumberLoad(numberLoad + local.length);
-    console.log(numberLoad);
   };
   useEffect(() => {
     const getData = async () => {
@@ -79,9 +80,6 @@ function ShowAllWishList() {
                     key={item.id}
                   />
                 ))}
-          {/* {local.map((item) => (
-            <Product iconProduct={iconProduct} product={item} key={item.id} />
-          ))} */}
         </div>
         <div className="load-more">
           <button
